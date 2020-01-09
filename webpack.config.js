@@ -34,13 +34,10 @@ let plugins = [
       to:   PATHS.distImg
     },
     {
-<<<<<<< HEAD
-=======
       from: PATHS.fonts,
       to:   PATHS.distFonts
     },
     {
->>>>>>> origin/master
       from:   './CNAME',
       to:     'CNAME',
       toType: 'file'
