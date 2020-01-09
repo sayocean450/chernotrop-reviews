@@ -9,6 +9,7 @@ const merge = require('webpack-merge');
 const pug = require('./webpack/pug');
 const script = require('./webpack/script');
 const scss = require('./webpack/scss');
+const files = require('./webpack/files');
 const pugToHtml = require('./webpack/pug-to-html');
 
 /* ПУТИ */
@@ -64,6 +65,7 @@ const common = merge([
       hints: false
     }
   },
+  files(),
   pug(),
   script(),
   scss()

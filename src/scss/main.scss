@@ -2,19 +2,8 @@
 @import "colors";
 @import "typo";
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  padding: 80px 32px 32px 32px;
   margin: 0;
-  text-transform: lowercase;
-  
-  @include respond(mobile) {
-    padding: 80px 24px 24px 24px;
-    height: 100vh;
-  }
 }
 
 .body_dark {
