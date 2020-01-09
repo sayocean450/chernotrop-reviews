@@ -1,0 +1,22 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-author/atricle-author
+doctype html(prefix="og: http://ogp.me/ns#")
+html
+    +head(
+    'Title',
+    'Description',
+    'http://chernotrop.reviews/img/default.jpg',
+    ''
+    )
+body.body_light
+    +header('dark')
+    article.article
+        div.article__header
+            h1.article__headline Header
+            p.article__description Description
+        div.article__content
+            div.article__content-row
+                div.article__content-left Content
+                div.article__content-right Additional
+            +articleAuthor('Артём Сошников', 'http://soshnikov-writing.art/')

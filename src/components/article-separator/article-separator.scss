@@ -1,0 +1,20 @@
+.article-separator {
+  @include col10(0, row, center);
+  
+  @include respond(mobile) {
+    @include col100(0);
+    height: 1px;
+    border: 0.5px solid $gray;
+    margin: 12px 0 24px 0;
+  }
+  
+  &__border {
+    @include colauto(0, column);
+    width: 1px;
+    background-color: $gray;
+    
+    @include respond(mobile) {
+      display: none;
+    }
+  }
+}

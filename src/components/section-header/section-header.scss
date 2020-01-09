@@ -1,0 +1,22 @@
+.section-header {
+  @include col100(0, column, center);
+  align-items: center;
+  color: $lightGray;
+  text-transform: uppercase;
+  
+  @include respond(mobile) {
+    @include col100(0, column);
+    align-items: flex-start;
+  }
+  
+  &__colon {
+    font-family: $basicFont;
+    font-size: $fontSizeMain;
+    letter-spacing: 3px;
+    margin: 0 0 12px 0;
+    
+    @include respond(mobile) {
+      font-size: $fontSizeSmall;
+    }
+  }
+}
