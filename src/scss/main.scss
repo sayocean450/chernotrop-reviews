@@ -17,7 +17,6 @@ body {
   }
 }
 
-<<<<<<< HEAD
 .body_dark {
   background-color: $darkGray;
 }
@@ -99,50 +98,4 @@ body {
       }
     }
   }
-=======
-p {
-  margin: 0 0 32px 0;
-  
-  @include respond(mobile) {
-    margin: 0 0 24px 0;
-  }
-}
-
-.body {
-  &_dark {
-    background-color: $darkGray;
-  }
-  
-  &_light {
-    background-color: $soapStone;
-  }
-}
-
-.content {
-  @include col100(0, column, flex-start, center);
-  
-  @include respond(mobile) {
-    @include col100(0, column, flex-start, center);
-  }
-}
-
-blockquote {
-  color: darken($milanoRed, 10%);
-  
-  @include respond(mobile) {
-    margin: 4px 12px;
-  }
-}
-
-code {
-  @include colauto(8px 16px);
-  border-radius: 4px;
-  background-color: darken($soapStone, 5%);
-  font: $groteskMain;
-  margin: 0 0 8px 0;
-}
-
-.code_right {
-  justify-content: end;
->>>>>>> origin/master
 }

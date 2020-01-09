@@ -2,7 +2,6 @@
 @import "../../scss/typo";
 
 .header {
-<<<<<<< HEAD
   @include col100(0 12px 0 72px, row, flex-start, center);
   height: 72px;
   position: fixed;
@@ -15,42 +14,14 @@
     height: 48px;
   }
   
-=======
-  @include col100(0 32px, row, flex-start, center);
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  height: 48px;
-  font: $groteskMain;
-  background-color: $darkGray;
-  
-  @include respond(mobile) {
-    @include col100(0 12px, row, flex-start, center);
-  }
-  
-  a {
-    color: $chromeYellow;
-  }
-  
->>>>>>> origin/master
   &__logo {
     @include col20(0);
     align-items: center;
     margin: 8px 0 0 0;
     
     @include respond(mobile) {
-<<<<<<< HEAD
       @include col50(0);
       align-items: center;
-=======
-      @include col90(0 12px, row, flex-start);
-    }
-    
-    &-link {
-      color: inherit;
-      line-height: 1;
->>>>>>> origin/master
     }
   }
   
@@ -58,7 +29,6 @@
     display: none;
     
     @include respond(tablet) {
-<<<<<<< HEAD
       display: none;
     }
     
@@ -66,30 +36,6 @@
       display: flex;
       @include col50(0, column, center, flex-end);
       align-items: flex-end;
-=======
-      @include col80(0, row, flex-end);
-    }
-    
-    @include respond(mobile) {
-      @include col50(0 12px, row, flex-end);
-    }
-    
-    &-elem {
-      @include colauto(0 0 0 48px);
-      
-      @include respond(mobile) {
-        @include colauto(0 0 0 24px);
-      }
-    }
-  }
-  
-  &_light {
-    background-color: $soapStone;
-    border-bottom: 1px solid darken($soapStone, 20%);
-    
-    a {
-      color: $black;
->>>>>>> origin/master
     }
   }
   
