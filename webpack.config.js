@@ -37,11 +37,6 @@ let plugins = [
     {
       from: PATHS.fonts,
       to:   PATHS.distFonts
-    },
-    {
-      from:   './CNAME',
-      to:     'CNAME',
-      toType: 'file'
     }
   ])
 ];
