@@ -1,0 +1,151 @@
+@import "colors";
+
+<<<<<<< HEAD
+$fontSizeSmall: 14px;
+$fontSizeMain: 16px;
+$fontSizeMedium: 24px;
+$fontSizeLarge: 32px;
+$fontSizeBig: 56px;
+
+$accentFont: 'Arkhip', 'Georgia', serif;
+$basicFont: 'PT Root UI Regular', 'Roboto', 'Arial', sans-serif;
+
+p {
+  margin: 0 0 32px 0;
+  
+  @include respond(mobile) {
+    margin: 0 0 24px 0;
+  }
+}
+=======
+$groteskExtraLarge: 48px/56px "PT Root UI Bold", 'PT Sans', Arial, sans-serif;
+$groteskLarge: 32px/40px "PT Root UI Bold", 'PT Sans', Arial, sans-serif;
+$groteskMain: 16px/23px "PT Root UI Regular", 'PT Sans', Arial, sans-serif;
+$groteskSmall: 14px/20px "PT Root UI Regular", 'PT Sans', Arial, sans-serif;
+
+$antiquaMain: 20px/34px "KTB", Georgia, serif;
+$antiquaSmall: 16px/24px "KTB", Georgia, serif;
+>>>>>>> origin/master
+
+a {
+  color: $coldBlue;
+  text-decoration: none;
+}
+
+h1 {
+<<<<<<< HEAD
+  font-family: $accentFont;
+  font-size: $fontSizeBig;
+  text-transform: uppercase;
+  margin: 0 0 64px 0;
+  
+  @include respond(mobile) {
+    font-size: $fontSizeMedium;
+    margin: 32px 0;
+=======
+  font: $groteskExtraLarge;
+  margin: 0;
+  
+  @include respond(mobile) {
+    font: $groteskLarge;
+>>>>>>> origin/master
+  }
+}
+
+h2 {
+<<<<<<< HEAD
+  font-family: $accentFont;
+  font-size: $fontSizeBig;
+  text-transform: uppercase;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  
+  @include respond(mobile) {
+    font-size: $fontSizeMedium;
+    margin: 0 0 8px 0;
+  }
+}
+
+h3 {
+  font-family: $accentFont;
+  font-size: $fontSizeMedium;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  
+  @include respond(mobile) {
+    font-size: $fontSizeMain;
+    margin: 0 0 8px 0;
+    line-height: 1.8;
+  }
+}
+
+h5 {
+  font-size: $fontSizeMain;
+  margin: 0 0 8px 0;
+}
+
+@font-face {
+  font-family: 'Arkhip';
+  src: url('../../fonts/arkhip/arkhip-regular.ttf') format('truetype'),
+  url('../../fonts/arkhip/arkhip-regular.otf');
+}
+
+@font-face {
+  font-family: 'PT Root UI Regular';
+  src: url('../../fonts/pt-root/pt-root-ui-regular/pt-root-ui-regular.eot');
+  src: url('../../fonts/pt-root/pt-root-ui-regular/pt-root-ui-regular.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/pt-root/pt-root-ui-regular/pt-root-ui-regular.woff2') format('woff2'),
+  url('../../fonts/pt-root/pt-root-ui-regular/pt-root-ui-regular.ttf') format('truetype');
+=======
+  font: $groteskLarge;
+  margin: 0;
+}
+
+h5 {
+  font: $groteskSmall;
+  letter-spacing: 1px;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+}
+
+h1, h2, h5 {
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'KTB';
+  src: url('../fonts/type.eot');
+  src: url('../fonts/type.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/type.woff2') format('woff2'),
+  url('../fonts/type.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Root UI Regular';
+  src: url('../fonts/pt-root-ui-regular.eot');
+  src: url('../fonts/pt-root-ui-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/pt-root-ui-regular.woff2') format('woff2'),
+  url('../fonts/pt-root-ui-regular.ttf') format('truetype');
+>>>>>>> origin/master
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Root UI Bold';
+<<<<<<< HEAD
+  src: url('../../fonts/pt-root/pt-root-ui-bold/pt-root-ui-bold.eot');
+  src: url('../../fonts/pt-root/pt-root-ui-bold/pt-root-ui-bold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/pt-root/pt-root-ui-bold/pt-root-ui-bold.woff2') format('woff2'),
+  url('../../fonts/pt-root/pt-root-ui-bold/pt-root-ui-bold.ttf') format('truetype');
+=======
+  src: url('../fonts/pt-root-ui-bold.eot');
+  src: url('../fonts/pt-root-ui-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/pt-root-ui-bold.woff2') format('woff2'),
+  url('../fonts/pt-root-ui-bold.ttf') format('truetype');
+>>>>>>> origin/master
+  font-weight: normal;
+  font-style: normal;
+}

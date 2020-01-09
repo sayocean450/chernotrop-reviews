@@ -1,0 +1,23 @@
+@import "../../scss/colors";
+
+.logo {
+  font-family: $accentFont;
+  font-size: $fontSizeMedium;
+  
+  &_dark {
+    color: $lightGray;
+  }
+  
+  &_light {
+    color: $darkGray;
+  }
+  
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  @include respond(mobile) {
+    font-size: $fontSizeMain;
+  }
+}

@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+include ../../components/logo/logo
+mixin header(theme, modeValue="inactive")
+    include ../icon/icon
+    header.header(class=`header_${theme}`)
+        div.header__logo
+            +logo(theme)
+        div.header__menu#modeValue
+            if modeValue === 'active'
+                a(href="javascript:history.back()")
+                    +iconClose('24px').icon_white
+            else
+                a(href="menu.html")
+                    +iconMenu('24px').icon_white
+=======
+mixin header(theme='light', modeValue='inactive')
+    include ../icon/icon
+    div.header(class='header_' + theme)
+        div.header__logo
+            a.header__logo-link(href="index.html") артём сошников
+        div.header__menu
+            a.header__menu-elem(href="index.html#writing") проза
+            a.header__menu-elem(href="index.html#contacts") контакты
+>>>>>>> origin/master

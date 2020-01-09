@@ -1,0 +1,91 @@
+.sas {
+  @include col100(144px 72px 0 72px, column);
+  
+  @include respond(mobile) {
+    @include col100(32px 32px 0 32px, column);
+  }
+  
+  &__articles {
+    @include col100(0, row);
+    align-items: stretch;
+    
+    @include respond(mobile) {
+      @include col100(0, column);
+    }
+    
+    &-headline {
+      font-family: $accentFont;
+      font-size: $fontSizeMedium;
+      text-transform: uppercase;
+      line-height: 1.64;
+      color: $coldBlue;
+      margin: 0 0 8px 0;
+      
+      @include respond(mobile) {
+        font-size: $fontSizeMain;
+        margin: 0 0 4px 0;
+      }
+    }
+    
+    &-description {
+      font-family: $basicFont;
+      font-size: $fontSizeMedium;
+      color: $lightGray;
+      
+      @include respond(mobile) {
+        font-size: $fontSizeMain;
+      }
+    }
+  }
+  
+  &__article {
+    &-1 {
+      @include col35(0 0 0 0, column);
+      background-image: url("../../img/section-pogodin.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 144px;
+      
+      @include respond(mobile) {
+        @include col100(24px 0 0 0, column);
+      }
+      
+      &-description {
+        @include col55(0);
+      }
+    }
+    
+    &-2 {
+      @include col25(0 0 0 0, column);
+      
+      @include respond(mobile) {
+        @include col100(0, column);
+      }
+      
+      &-description {
+        @include col100(0);
+      }
+    }
+    
+    &-3 {
+      @include col25(0 0 0 0, column);
+      background-image: url("../../img/carrots-rotterdam.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 144px;
+      
+      @include respond(mobile) {
+        @include col100(0, column);
+      }
+      
+      img {
+        width: 50%;
+      }
+      
+      &-description {
+        @include col100(0);
+        margin-top: 0;
+      }
+    }
+  }
+}
