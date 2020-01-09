@@ -57,7 +57,7 @@
     }
     
     &-row {
-      @include col100(0);
+      @include col100(0, row, space-between);
       
       @include respond(mobile) {
         @include col100(0, column);
@@ -69,6 +69,7 @@
       font-family: $basicFont;
       font-size: $fontSizeMedium;
       line-height: 1.65;
+      max-width: 780px;
       
       @include respond(mobile) {
         @include col100(0, column);
@@ -104,6 +105,7 @@
       }
       
       figure {
+        max-width: 300px;
         width: auto;
         margin: 0;
         
