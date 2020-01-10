@@ -2,4 +2,4 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*)$ http://www.your-site.ru/$1/ [L,R=301]
+RewriteRule ^(.*)$ http://www.chernotrop,reviews/$1/ [L,R=301]
