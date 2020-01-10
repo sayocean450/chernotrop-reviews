@@ -37,6 +37,10 @@ let plugins = [
     {
       from: PATHS.fonts,
       to:   PATHS.distFonts
+    },
+    {
+      from: './.htaccess',
+      to: './'
     }
   ])
 ];
