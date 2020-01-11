@@ -1,10 +1,5 @@
 mixin mainMenu(active)
-    if active === 'manifest'
-        nav.main__menu
-            a.main__menu-item.main__menu-item_active(href="manifest.html") манифест
-            a.main__menu-item(href="http://ttttt.me/blacktrope", target="blank") telegram-канал
-            a.main__menu-item(href="contacts.html") контакты
-    else if active === 'contacts'
+    if active === 'contacts'
         nav.main__menu
             a.main__menu-item(href="http://ttttt.me/blacktrope", target="blank") telegram-канал
             a.main__menu-item.main__menu-item_active(href="contacts.html") контакты
