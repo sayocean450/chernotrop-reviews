@@ -16,6 +16,7 @@
   &__content {
     @include col100(0, column);
     color: $white;
+    text-transform: lowercase;
     
     h3 {
       color: $coldBlue;
@@ -23,6 +24,7 @@
     }
     
     p {
+      font-family: $basicFont;
       font-size: $fontSizeMedium;
     }
   }
