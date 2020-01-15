@@ -89,7 +89,7 @@ body {
   }
   
   &__description-right {
-    @include col50(0, column);
+    @include col40(0, column);
     
     line-height: 1.4;
     color: $lightGray;
