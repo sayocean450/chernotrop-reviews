@@ -1,5 +1,5 @@
 .sas {
-  @include col100(144px 72px 0 72px, column);
+  @include col100($mainContentMargin 72px 0 72px, column);
   
   @include respond(mobile) {
     @include col100(32px 32px 0 32px, column);

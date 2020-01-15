@@ -1,5 +1,5 @@
 .how-dare {
-  @include col100(144px 72px 72px 72px, row, space-between);
+  @include col100($mainContentMargin 72px 72px 72px, row, space-between);
   
   &__col {
     @include col30(0, column);
