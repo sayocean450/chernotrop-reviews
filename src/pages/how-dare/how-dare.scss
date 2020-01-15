@@ -1,0 +1,29 @@
+.how-dare {
+  @include col100(144px 72px 72px 72px, row, space-between);
+  
+  &__col {
+    @include col30(0, column);
+  }
+  
+  &__pic {
+    @include col100(0 0 24px 0, column);
+    
+    img {
+      width: 100%;
+    }
+  }
+  
+  &__content {
+    @include col100(0, column);
+    color: $white;
+    
+    h3 {
+      color: $coldBlue;
+      line-height: 1.6;
+    }
+    
+    p {
+      font-size: $fontSizeMedium;
+    }
+  }
+}

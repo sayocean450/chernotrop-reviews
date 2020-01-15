@@ -87,4 +87,20 @@ body {
       }
     }
   }
+  
+  &__description-right {
+    @include col50(0, column);
+    
+    line-height: 1.4;
+    color: $lightGray;
+    
+    p {
+      font-size: $fontSizeMedium;
+      font-family: $basicFont;
+      
+      @include respond(mobile) {
+        font-size: $fontSizeMain;
+      }
+    }
+  }
 }
