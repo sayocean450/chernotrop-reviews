@@ -27,6 +27,7 @@ body {
     @include col50(0, column);
     line-height: 1.4;
     color: $lightGray;
+    text-transform: lowercase;
     
     &-row {
       @include col100(0 0 48px 0, column);
