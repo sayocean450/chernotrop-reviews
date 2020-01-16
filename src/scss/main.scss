@@ -3,6 +3,7 @@
 @import "typo";
 
 $mainContentMargin: 72px;
+$mainContentMarginMobile: 32px;
 
 body {
   margin: 0;
@@ -20,7 +21,7 @@ body {
   @include col100(144px 72px 48px 72px, row, space-between);
   
   @include respond(mobile) {
-    @include col100(64px 32px 12px 32px, column);
+    @include col100(96px 32px 12px 32px, column);
   }
   
   &__description {

@@ -2,7 +2,7 @@
   @include col100($mainContentMargin 72px 0 72px, column);
   
   @include respond(mobile) {
-    @include col100(32px 32px 0 32px, column);
+    @include col100($mainContentMarginMobile 32px 0 32px, column);
   }
   
   &__articles {
@@ -34,6 +34,7 @@
       
       @include respond(mobile) {
         font-size: $fontSizeMain;
+        line-height: 1.4;
       }
     }
   }
