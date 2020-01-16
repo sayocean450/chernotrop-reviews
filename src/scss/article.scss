@@ -81,6 +81,11 @@
       blockquote {
         margin: 0 0 32px 0;
       }
+
+      &-intro {
+        font-family: $basicFont;
+        font-size: $fontSizeMain;
+      }
     }
     
     &-right {
