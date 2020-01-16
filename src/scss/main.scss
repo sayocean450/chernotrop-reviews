@@ -73,6 +73,7 @@ body {
     &_mobile {
       @include col100(64px 0 0 0, column);
       align-items: center;
+      font-family: $basicFont;
     }
     
     &-item {
