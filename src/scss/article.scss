@@ -85,6 +85,10 @@
       &-intro {
         font-family: $basicFont;
         font-size: $fontSizeMain;
+
+        @include respond(mobile) {
+          font-size: $fontSizeSmall;
+        }
       }
     }
     
