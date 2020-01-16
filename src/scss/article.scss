@@ -15,7 +15,7 @@
     background-color: $darkGray;
     
     @include respond(mobile) {
-      @include col100(32px 32px, column);
+      @include col100(32px 32px 64px 32px, column);
     }
   }
   
@@ -30,7 +30,7 @@
     max-width: 960px;
     
     @include respond(mobile) {
-      font-size: $fontSizeMain;
+      font-size: $fontSizeMedium;
       line-height: 2;
     }
   }
@@ -89,6 +89,10 @@
         @include respond(mobile) {
           font-size: $fontSizeSmall;
         }
+      }
+
+      &-topor {
+        color: darken($lightGray, 30%);
       }
     }
     
