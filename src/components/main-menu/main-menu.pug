@@ -2,18 +2,18 @@ mixin mainMenu(active)
     if active === 'contacts'
         nav(class!=attributes.class).main__menu
             a.main__menu-item(href="index.html", target="blank") главная
-            a.main__menu-item(href="how-dare.html") да как ты смеешь!
+            a.main__menu-item(href="how-dare.html") да как ты смеешь?!
             a.main__menu-item(href="http://ttttt.me/blacktrope", target="blank") telegram-канал
             a.main__menu-item.main__menu-item_active(href="contacts.html") контакты
     else if active === 'howDare'
         nav(class!=attributes.class).main__menu
             a.main__menu-item(href="index.html", target="blank") главная
-            a.main__menu-item.main__menu-item_active(href="how-dare.html") да как ты смеешь!
+            a.main__menu-item.main__menu-item_active(href="how-dare.html") да как ты смеешь?!
             a.main__menu-item(href="http://ttttt.me/blacktrope", target="blank") telegram-канал
             a.main__menu-item(href="contacts.html") контакты
     else
         nav(class!=attributes.class).main__menu
             a.main__menu-item.main__menu-item_active(href="index.html", target="blank") главная
-            a.main__menu-item(href="how-dare.html", target="blank") да как ты смеешь!
+            a.main__menu-item(href="how-dare.html", target="blank") да как ты смеешь?!
             a.main__menu-item(href="http://ttttt.me/blacktrope", target="blank") telegram-канал
             a.main__menu-item(href="contacts.html") контакты
