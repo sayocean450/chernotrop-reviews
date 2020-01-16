@@ -77,21 +77,9 @@
         font-size: $fontSizeMain;
         line-height: 1.6;
       }
-      
+
       blockquote {
-        font-size: $fontSizeMain;
-        line-height: 1.65;
         margin: 0 0 32px 0;
-        padding: 0 32px 0 16px;
-        border-left: 4px solid $deepRed;
-        
-        p {
-          margin: 8px 0 8px 0;
-        }
-        
-        @include respond(mobile) {
-          padding: 0 16px 0 16px;
-        }
       }
     }
     
@@ -128,6 +116,10 @@
             font-size: $fontSizeSmall;
           }
         }
+      }
+
+      blockquote {
+        margin: 0;
       }
     }
     
