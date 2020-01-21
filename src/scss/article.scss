@@ -81,19 +81,6 @@
       blockquote {
         margin: 0 0 32px 0;
       }
-
-      &-intro {
-        font-family: $basicFont;
-        font-size: $fontSizeMain;
-
-        @include respond(mobile) {
-          font-size: $fontSizeSmall;
-        }
-      }
-
-      &-topor {
-        color: darken($lightGray, 30%);
-      }
     }
     
     &-right {
@@ -161,7 +148,7 @@
     }
     
     &-author {
-      font-size: $fontSizeMain;
+      font-size: $fontSizeMedium;
       margin-top: 32px;
     }
   }
