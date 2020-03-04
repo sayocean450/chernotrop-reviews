@@ -31,7 +31,7 @@
     
     @include respond(mobile) {
       font-size: $fontSizeMedium;
-      line-height: 2;
+      line-height: 1.7;
     }
   }
   
@@ -83,7 +83,7 @@
       }
 
       figure {
-        margin: 0;
+        margin: 0 0 32px 0;
 
         img {
           width: 100%;
@@ -92,6 +92,10 @@
         figcaption {
           font-size: $fontSizeMain;
           margin: 8px 0 0 0;
+
+        @include respond(mobile) {
+          font-size: $fontSizeSmall;
+        }          
         }
       }
     }
@@ -163,6 +167,10 @@
     &-author {
       font-size: $fontSizeMedium;
       margin-top: 32px;
+
+      @include respond(mobile) {
+        font-size: $fontSizeSmall;
+      }
     }
   }
 }
