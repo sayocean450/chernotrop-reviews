@@ -1,13 +1,14 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
-doctype html(prefix="og: http://ogp.me/ns#")
-html
+doctype html
+html(prefix="og: http://ogp.me/ns#")
     +head(
+      'http://chernotrop.reviews/senchin-stories',
+      'article',
       'Герои Сенчина не хотят гулять по Парижу ⚒ Чернотроп',
       'Они хотят ныть, бухать и работать охранниками в Магните. Нам нужно с ними что-то делать',
-      'http://chernotrop.reviews/img/senchin-paris-og.jpg',
-      ''
+      'http://chernotrop.reviews/img/senchin-paris-og.jpg'
     )
 body.body_light
     +header('dark')

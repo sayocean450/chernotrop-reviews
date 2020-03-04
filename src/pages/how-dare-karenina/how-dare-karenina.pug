@@ -1,13 +1,14 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
-doctype html(prefix="og: http://ogp.me/ns#")
-html
+doctype html
+html(prefix="og: http://ogp.me/ns#")
     +head(
+    'http://chernotrop.reviews/how-dare-karenina',
+    'article',
     'Время идёт, «Анна Каренина» по-прежнему не оставляет нас равнодушными',
     'Правда, про Левина все потихоньку забывают.',
-    'http://chernotrop.reviews/img/how-dare-karenina-og.jpg',
-    ''
+    'http://chernotrop.reviews/img/how-dare-karenina-og.jpg'
     )
 body.body_light
     +header('dark')

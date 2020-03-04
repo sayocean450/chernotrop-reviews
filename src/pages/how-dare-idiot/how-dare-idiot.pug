@@ -1,13 +1,14 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
-doctype html(prefix="og: http://ogp.me/ns#")
-html
+doctype html
+html(prefix="og: http://ogp.me/ns#")
     +head(
+    'http://chernotrop.reviews/how-dare-idiot',
+    'article',
     'Князь Мышкин — герой грядущей волны неоромантизма',
     'Волна скоро докатится до России, но сам роман читать не будут.',
-    'http://chernotrop.reviews/img/how-dare-idiot-og.jpg',
-    ''
+    'http://chernotrop.reviews/img/how-dare-idiot-og.jpg'
     )
 body.body_light
     +header('dark')

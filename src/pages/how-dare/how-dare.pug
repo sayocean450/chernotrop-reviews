@@ -2,13 +2,14 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/main-menu/main-menu
 include ../../sections/selfie-against-sword/selfie-against-sword
-doctype html(prefix="og: http://ogp.me/ns#")
-html
+doctype html
+html(prefix="og: http://ogp.me/ns#")
     +head(
+      'http://chernotrop.reviews/how-dare',
+      'article',
       '«Да как ты смеешь?!» ⚒︎ Чернотроп',
       'Рубрика, в которой самоучка и профан Артём Сошников бесстыдно скрещивает русскую классику с современностью.',
-      'http://chernotrop.reviews/img/how-dare-og.jpg',
-      ''
+      'http://chernotrop.reviews/img/how-dare-og.jpg'
     )
 body.body_dark
     +header('dark')

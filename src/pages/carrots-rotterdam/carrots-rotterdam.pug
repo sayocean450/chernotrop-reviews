@@ -1,13 +1,14 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
-doctype html(prefix="og: http://ogp.me/ns#")
-html
+doctype html
+html(prefix="og: http://ogp.me/ns#")
     +head(
+      'http://chernotrop.reviews/carrots-rotterdam',
+      'article',
       '«Мне просто всё обрыдло» ⚒ Чернотроп',
       'Через личную историю европейского путешествия рассказываем, где и зачем читать «Роттердамский дневник» Бориса Рыжего',
-      'http://chernotrop.reviews/img/carrots-rotterdam-og.jpg',
-      ''
+      'http://chernotrop.reviews/img/carrots-rotterdam-og.jpg'
     )
 body.body_light
     +header('dark')

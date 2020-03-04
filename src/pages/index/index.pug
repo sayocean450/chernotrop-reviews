@@ -2,13 +2,14 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/main-menu/main-menu
 include ../../sections/selfie-against-sword/selfie-against-sword
-doctype html(prefix="og: http://ogp.me/ns#")
-html
+doctype html
+html(prefix="og: http://ogp.me/ns#")
     +head(
+    'http://chernotrop.reviews/',
+    'website',
     'Чернотроп ⚒︎ Русский реализм',
     'Скрещиваем русскую реалистическую прозу с современностью',
-    'http://chernotrop.reviews/img/default.jpg',
-    ''
+    'http://chernotrop.reviews/img/default.jpg'
     )
 body.body_dark
     +header('dark')

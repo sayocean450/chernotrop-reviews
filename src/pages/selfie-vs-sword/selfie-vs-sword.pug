@@ -1,13 +1,14 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
-doctype html(prefix="og: http://ogp.me/ns#")
-html
+doctype html
+html(prefix="og: http://ogp.me/ns#")
     +head(
+      'http://chernotrop.reviews/selfie-vs-sword',
+      'article',
       'Русская молодёжь одержима путешествиями? ⚒ Чернотроп',
       'Рассказываю на примере прозы 19-го века, почему вам порой тошно заглядывать в Инстаграм.',
-      'http://chernotrop.reviews/img/selfie-vs-sword-og.jpg',
-      ''
+      'http://chernotrop.reviews/img/selfie-vs-sword-og.jpg'
     )
 body.body_light
     +header('dark')

@@ -1,13 +1,14 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/main-menu/main-menu
-doctype html(prefix="og: http://ogp.me/ns#")
-html
+doctype html
+html(prefix="og: http://ogp.me/ns#")
     +head(
+    'http://chernotrop.reviews/manifest',
+    'article',
     'Манифест ⚒ Чернотроп︎',
     'Скрещиваем русскую реалистическую прозу с современностью',
-    'http://chernotrop.reviews/img/default.jpg',
-    ''
+    'http://chernotrop.reviews/img/default.jpg'
     )
 body.body_dark
     +header('dark')
