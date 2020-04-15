@@ -1,0 +1,8 @@
+.article-author {
+  font-size: $fontSizeMedium;
+  margin-top: 32px;
+  
+  @include respond(mobile) {
+    font-size: $fontSizeSmall;
+  }
+}

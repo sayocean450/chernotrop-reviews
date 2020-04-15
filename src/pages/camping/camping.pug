@@ -1,0 +1,24 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/main-menu/main-menu
+include ../../components/camping-article/camping-article
+doctype html
+html(prefix="og: http://ogp.me/ns#")
+    +head(
+      'http://chernotrop.reviews/camping',
+      'article',
+      '«Кемпинг» ⚒︎ Чернотроп',
+      'Раздел сайта, в которой копятся рецензии телеграм-канала «Чернотроп».',
+      'http://chernotrop.reviews/img/camping-og.jpg'
+    )
+body.body_dark
+    +header('dark')
+    section.main
+        div.main__description
+            p «кемпинг» — раздел сайта, в котором копятся рецензии создателя журнала «чернотроп» о гуманитраном нон-фикшне, современной музыке и прочих областях современной культуры.
+        +mainMenu('camping')
+    section.camping
+        div.camping__section
+            div.camping__section-headline
+                h3 2018
+            +campingArticle('stoic', 'Стоицизм — учение будущего?', '«как быть стоиком» массимо пильюччи')

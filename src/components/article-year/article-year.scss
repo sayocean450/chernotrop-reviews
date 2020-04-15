@@ -1,0 +1,8 @@
+.article-year {
+  font-size: $fontSizeMedium;
+  margin-top: 4px;
+  
+  @include respond(mobile) {
+    font-size: $fontSizeSmall;
+  }
+}

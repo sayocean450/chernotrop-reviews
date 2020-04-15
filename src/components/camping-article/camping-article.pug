@@ -1,0 +1,8 @@
+mixin campingArticle(id, title, desc)
+    a(href=`${id}.html`).camping__article
+        div.camping__article-pic
+            img(src=`../../img/${id}-cover.jpg`)
+        div.camping__article-content
+            div.camping__article-content-title
+                h3=title
+            div.camping__article-content-desc=desc

@@ -1,0 +1,98 @@
+.camping {
+  @include col100($mainContentMargin 72px 72px 72px, column);
+  height: 48px;
+  
+  @include respond(mobile) {
+      @include col100($mainContentMarginMobile 24px 32px 24px, column);
+    }
+  
+  &__section {
+    @include col100(0 0 48px 0, column);
+    color: $white;
+    
+    &-headline {
+      margin: 0 0 8px 0;
+    }
+  }
+  
+  &__article {
+    @include col100(0);
+    margin: 0 0 48px 0;
+    
+    &-pic {
+      width: 72px;
+      height: 72px;
+      
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+    &-content {
+      @include col90(4px 24px 0 24px, column);
+      height: 72px;
+      
+      &-title {
+        @include col50(0);
+        color: $coldBlue;
+        
+        & h3 {
+          margin: 0 0 8px 0;
+        }
+      }
+      
+      &-desc {
+        @include col60(0);
+        color: $white;
+        font-size: $fontSizeMedium;
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+.how-dare {
+  @include col100($mainContentMargin 72px 72px 72px, row, space-between);
+
+  @include respond(mobile) {
+    @include col100($mainContentMarginMobile 24px 32px 24px, column);
+  }
+  
+  &__col {
+    @include col25(0, column);
+
+    @include respond(mobile) {
+      @include col100(0 0 32px 0, column);
+    }
+  }
+  
+  &__pic {
+    @include col100(0 0 24px 0, column);
+    
+    img {
+      width: 100%;
+    }
+  }
+  
+  &__content {
+    @include col100(0, column);
+    color: $white;
+    text-transform: lowercase;
+    
+    h3 {
+      color: $coldBlue;
+      line-height: 1.6;
+    }
+    
+    p {
+      font-family: $basicFont;
+      font-size: $fontSizeMedium;
+
+      @include respond(mobile) {
+        font-size: $fontSizeMain;
+        line-height: 1.4;
+      }
+    }
+  }
+}
