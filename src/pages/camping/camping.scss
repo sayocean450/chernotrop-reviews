@@ -2,8 +2,8 @@
   @include col100(0, column);
   
   &__row {
-    @include col75(32px 72px 32px 72px, column);
-    margin-bottom: 48px;
+    @include col75(16px 72px 16px 72px, column);
+    margin-bottom: 16px;
     
     @include respond(mobile) {
       @include col100($mainContentMarginMobile 24px 32px 24px, column);
