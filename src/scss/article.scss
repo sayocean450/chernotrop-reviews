@@ -9,6 +9,10 @@
       color: $black;
     }
   }
+  h3 {
+    margin-top: 32px;
+    font-size: $fontSizeLarge;
+  }
   
   &__header {
     @include col100(96px 72px, column);
