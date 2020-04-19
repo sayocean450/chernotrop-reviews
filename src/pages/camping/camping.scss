@@ -1,20 +1,26 @@
 .camping {
-  @include col100($mainContentMargin 72px 72px 72px, row, space-between);
-
-  @include respond(mobile) {
-    @include col100($mainContentMarginMobile 24px 32px 24px, column);
+  @include col100(0, column);
+  
+  &__row {
+    @include col75(32px 72px 32px 72px, column);
+    margin-bottom: 48px;
+    
+    @include respond(mobile) {
+      @include col100($mainContentMarginMobile 24px 32px 24px, column);
+    }
   }
   
-  &__col {
-    @include col20(0, column);
-
+  &__article {
+    @include col100(0);
+    margin-bottom: 24px;
+    
     @include respond(mobile) {
       @include col100(0 0 32px 0, column);
     }
   }
   
   &__pic {
-    @include col100(0 0 24px 0, column);
+    @include col30(0, column);
     
     img {
       width: 100%;
@@ -22,9 +28,13 @@
   }
   
   &__content {
-    @include col100(0, column);
+    @include col70(0 0 0 24px, column);
     color: $white;
     text-transform: lowercase;
+    
+    &-headline {
+      margin: 8px 0 0 0;
+    }
     
     h3 {
       color: $coldBlue;
@@ -34,7 +44,7 @@
     p {
       font-family: $basicFont;
       font-size: $fontSizeMedium;
-
+      
       @include respond(mobile) {
         font-size: $fontSizeMain;
         line-height: 1.4;

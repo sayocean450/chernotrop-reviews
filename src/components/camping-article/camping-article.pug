@@ -1,7 +1,9 @@
 mixin campingArticle(id, title, desc)
-    a(href=`${id}.html`).camping__col
+    a(href=`${id}.html`).camping__article
         div.camping__pic
-            img(src=`../../img/${id}-cover.jpg`)
+            img(src=`../../img/${id}-preview.jpg`)
         div.camping__content
-            h3=title
-            p=desc
+            div.camping__content-headline
+                h3=title
+            div.camping__content-desc
+                p=desc
