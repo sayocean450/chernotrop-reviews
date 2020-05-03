@@ -2,6 +2,7 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/main-menu/main-menu
 include ../../components/camping-article/camping-article
+include ../../components/camping-article-external/camping-article-external
 include ../../components/camping-year/camping-year
 doctype html
 html(prefix="og: http://ogp.me/ns#")
@@ -25,7 +26,9 @@ body.body_dark
         div.camping__row
             +campingYear('2019')
             +campingArticle('ivanov-foodunit', 'Нет, не о вампирах', 'О новом романе Алексея Иванова «Пищеблок», его надуровнях и скрытой под вампирской тематикой морали')
-            +campingArticle('salnikov-oposredovanno', 'Вылизан, но', 'О том, как желание угодить испортило новый роман Алексея Сальникова')
+                +campingArticle('salnikov-oposredovanno', 'Вылизан, но', 'О том, как желание угодить испортило новый роман Алексея Сальникова')
+            +campingArticleExternal('mokhov-gavande', 'http://rara-rara.ru/menu-texts/do_i_posle_smerti', 'До и после смерти', 'Как марскист бросил вызов сообществу профессионалов')
+            +campingArticleExternal('merrifield-amateur', 'http://rara-rara.ru/menu-texts/professionalam_tut_ne_mesto', 'Профессионалам тут не место', 'Как марскист бросил вызов сообществу профессионалов')
             +campingArticle('salnikov-1904', 'Бенджамин Баттон современной прозы', 'Если развернуть публикации Алексея Сальникова вспять, проглядывается логичный путь развития молодого писателя')
             +campingArticle('hu-bo-elephant', 'Мёртвый китайский Хемингуэй', 'Его звали Ху Бо и он покончил с собой. «Сеанс» перевёл несколько рассказов')
         div.camping__row
