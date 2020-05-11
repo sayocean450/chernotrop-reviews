@@ -1,0 +1,7 @@
+mixin article20(id, title, desc)
+    a(href=`${id}.html`).article20
+        div.article20__img
+            img(src=`../../img/${id}-preview.jpg`)
+        div.article20__content
+            h3=title
+            p=desc

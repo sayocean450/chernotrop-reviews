@@ -1,0 +1,21 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/menu/menu
+include ../../components/pagination/pagination
+include ../../sections/articles-2018/articles-2018
+
+doctype html
+html(prefix="og: http://ogp.me/ns#")
+    +head(
+    'http://chernotrop.reviews/',
+    'website',
+    'Чернотроп ⚒︎ Русский реализм',
+    'Скрещиваем русскую реалистическую прозу с современностью',
+    'http://chernotrop.reviews/img/default.jpg'
+    )
+body.body_dark
+    +header('dark', 'article')
+    div.wrap
+        div.content
+            +pagination('2018')
+            +articles2018()

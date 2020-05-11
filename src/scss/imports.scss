@@ -8,15 +8,19 @@
 @import "../components/article-author/article-author";
 @import "../components/article-separator/article-separator";
 @import "../components/article-year/article-year";
-@import "../components/camping-year/camping-year";
+@import "../components/article50/article50";
+@import "../components/article20/article20";
+@import "../components/article15/article15";
 @import "../components/header/header";
 @import "../components/icon/icon";
 @import "../components/logo/logo";
 @import "../components/menu/menu";
+@import "../components/pagination/pagination";
 @import "../components/section-header/section-header";
 
-@import "../sections/first/first";
 @import "../sections/selfie-against-sword/selfie-against-sword";
-
-@import "../pages/how-dare/how-dare";
-@import "../pages/camping/camping";
+@import "../sections/articles-2020/articles-2020";
+@import "../sections/articles-2019/articles-2019";
+@import "../sections/articles-2019-2/articles-2019-2";
+@import "../sections/articles-2018/articles-2018";
+@import "../sections/svezhakMay/svezhakMay";

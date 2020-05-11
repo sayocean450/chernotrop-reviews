@@ -2,12 +2,12 @@
 @import "colors";
 @import "typo";
 
-$mainContentMargin: 96px;
+$mainContentMargin: 64px;
 $mainContentMarginMobile: 32px;
 
 body {
   margin: 0;
-  line-height: 1.36;
+  line-height: 1.5;
 }
 
 .body_dark {
@@ -22,19 +22,32 @@ body {
   @include col100(72px 0 0 0, column);
 }
 
+.content {
+  @include col100($mainContentMargin 72px, column);
+  
+  &__text {
+    @include col50(0, column);
+    color: $white;
+    font-size: $fontSizeL;
+    
+    &-section {
+      @include col100(0 0 48px 0, column);
+    }
+  }
+}
+
 blockquote {
-  font-size: $fontSizeMain;
-  line-height: 1.65;
+  font-size: $fontSizeL;
   padding: 0 32px 0 16px;
   border-left: 4px solid $deepRed;
   
   p {
     margin: 16px 0 16px 0;
-
+    
     &:first-child {
       margin-top: 8px;
     }
-
+    
     &:last-child {
       margin-bottom: 8px;
     }
@@ -42,6 +55,16 @@ blockquote {
   
   @include respond(mobile) {
     padding: 0 16px 0 16px;
-    font-size: $fontSizeSmall;
+    font-size: $fontSizeS;
   }
+}
+
+ul {
+  margin: 8px 0 24px 0;
+  padding: 0 0 0 24px;
+}
+
+li {
+  list-style-type: decimal;
+  margin: 0 0 8px 0;
 }

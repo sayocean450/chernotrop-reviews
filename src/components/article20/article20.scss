@@ -1,0 +1,28 @@
+.article20 {
+  @include col20(0, column, flex-start, stretch);
+  
+  &__img {
+    @include col100(0, column);
+    
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  &__content {
+    @include col100(24px 0 0 0, column);
+    
+    h3 {
+      color: $coldBlue;
+      margin-bottom: 8px;
+      line-height: 1.7;
+    }
+    
+    p {
+      font-size: $fontSizeM;
+      color: $white;
+      margin-bottom: 0;
+    }
+  }
+}

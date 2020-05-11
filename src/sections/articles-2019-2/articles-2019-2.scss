@@ -1,0 +1,22 @@
+.articles-2019-2 {
+  @include col100(0, column);
+  
+  &__row {
+    
+    &-sb {
+      @include col100(0 0 72px 0, row, space-between, stretch);
+    }
+    
+    &-fs {
+      @include col100(0 0 72px 0, row);
+      
+      & .article20 {
+        margin-right: 5%;
+      }
+      
+      & .article15 {
+        margin-right: 5%;
+      }
+    }
+  }
+}

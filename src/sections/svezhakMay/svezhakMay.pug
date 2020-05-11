@@ -1,0 +1,12 @@
+include ../../components/section-header/section-header
+include ../../components/article-separator/article-separator
+include ../../components/article20/article20
+
+mixin svezhakMay()
+    div.svezhakMay
+        +sectionHeader('алексей сальников', 'бенджамин баттон современной прозы')
+        div.svezhakMay__articles
+            +article20('salnikov-oposredovanno', 'Вылизан, но', 'О том, как желание угодить читателю испортило новый роман Алексея Сальникова')
+            +article20('salnikov-1904', 'Бенджамин Баттон современной прозы', 'Если развернуть публикации Сальникова вспять, просматривается логичный путь развития молодого писателя')
+            +article20('salnikov-department', 'Это просто репетиция', 'О первом романе Алексея Сальникова, который удивительным образом вышел только после второго')
+            +article20('salnikov-petrovs', 'Петровы в гриппе', 'Редкий пример того, как поэтический опыт автора благотворно сказывается на его прозе.')

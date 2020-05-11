@@ -1,0 +1,64 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-author/atricle-author
+include ../../components/article-year/article-year
+include ../../components/figure/figure
+
+- var title = 'Привал, №8: «На Литейном заводе» Николая Благовещенского'
+- var desc = 'Раз в неделю в рубрике «Привал» мы советуем по одному реалистическому рассказу, достойному внимания. В восьмом выпуске — документальный рассказ о положении дореволюционных рабочих, посвящённый Первомаю.'
+- var id = 'rest-blagoveschenskiy-on-factory'
+
+doctype html
+html(prefix="og: http://ogp.me/ns#")
++head(`${id}`,`${title}`, `${desc}`)
+body.body_light
+    +header('dark')
+    article.article
+        div.article__header
+            h1.article__headline=title
+            p.article__description=desc
+        div.article__content
+            div.article__content-row
+                div.article__content-left
+                    p.article__content-secondary-info Прочесть рассказ «На Литейном заводе» вы можете
+                        =" "
+                        a(href="https://ru.bookmate.com/books/L6fyorxl")
+                            span в общесдоступном PDF-сборнике «Серый мужик»
+                        | — издательства Common place
+                    p Восьмой выпуск «Привала» совсем крошечный, так как все силы в тот день ушли на статью
+                        =" "
+                        a(href="labor-day-2020.html") «Самый важный день самоизоляции»
+                        |, посвящённую Первомаю. Но, конечно же, первомайский выпуск «Привала» не может обойти тему труда.
+                        |
+                    p Сегодня я советую вам прочесть рассказ Николая Александровича Благовещенского «На литейном заводе».
+                    p Рассказ одновременно странный и самобытный. Он действительно больше напоминает репортаж, однако, в нём можно рассмотреть дореволюционные корни столь любимой сейчас документальности.
+                    p Несмотря на то, что «На литейном заводе» не назовёшь произведением искусства в привычном понимании, художественные элементы в нём присутствуют. Благовещенский не просто описывает ход событий и положение дел, рабочие под его пером обретают характеры, вырисовываются образы, формируется слепок эпохи.
+                    p Ну и посмотрите заодно на положение дореволюционных рабочих. Слова здесь излишни. ⚒
+                    ul
+                        li
+                            a(href="rest-valitov-orpheus.html")
+                                span Тимур Валитов «Орфей»
+                        li
+                            a(href="rest-zamyatin-waterflood.html")
+                                span Евгений Замятин «Наводнение»
+                        li
+                            a(href="rest-rasputin-french-lessons.html")
+                                span Валентин Распутин «Уроки французского»
+                        li
+                            a(href="rest-gorchev-from-spb-to-moscow.html")
+                                span Дмитрий Горчев «Из Петербурга в Москву»
+                        li
+                            a(href="rest-vampilov-duck-shooting.html")
+                                span Александр Вампилов «Утиная охота»
+                        li
+                            a(href="rest-nosov-two-tablets.html")
+                                span Сергей Носов «Две таблички на газоне»
+                        li
+                            a(href="rest-rybnikova-train-to-sakhalin.html")
+                                span Мария Рыбникова «Поезд на Сахалин»
+                        li Николай Благовещенский «На Литейном заводе»
+                        li
+                            a(href="rest-mlynchik-pool.html")
+                                span Татьяна Млынчик «Бассейн»
+                    +articleAuthor('','Артём Сошников', 'http://soshnikov-writing.art/')
+                    +articleYear('Петроград', '2020')

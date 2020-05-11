@@ -1,0 +1,14 @@
+mixin pagination(activePage)
+    div.pagination
+        if activePage === '2019'
+            a(href="index.html").pagination__year 2020
+            a(href="2019.html")(class="pagination__year pagination__year_active") 2019
+            a(href="2018.html").pagination__year 2018
+        else if activePage === '2018'
+            a(href="index.html").pagination__year 2020
+            a(href="2019.html").pagination__year 2019
+            a(href="2018.html")(class="pagination__year pagination__year_active") 2018
+        else
+            a(href="index.html")(class="pagination__year pagination__year_active") 2020
+            a(href="2019.html").pagination__year 2019
+            a(href="2018.html").pagination__year 2018

@@ -11,7 +11,7 @@
   }
   h3 {
     margin-top: 32px;
-    font-size: $fontSizeLarge;
+    font-size: $fontSizeXL;
   }
   
   &__header {
@@ -27,29 +27,29 @@
     margin: 64px 0 24px 0;
     padding: 0;
     color: $coldBlue;
-    font-size: $fontSizeBig;
+    font-size: $fontSizeXXL;
     font-family: $accentFont;
     text-transform: uppercase;
     line-height: 1.5;
-    max-width: 960px;
+    max-width: 780px;
     
     @include respond(mobile) {
-      font-size: $fontSizeMedium;
+      font-size: $fontSizeL;
       line-height: 1.7;
     }
   }
   
   &__description {
-    @include col50(0);
+    @include col45(0);
     margin: 0;
     color: $lightGray;
     font-family: $basicFont;
-    font-size: $fontSizeMedium;
+    font-size: $fontSizeL;
     line-height: 1.5;
     
     @include respond(mobile) {
       @include col100(0);
-      font-size: $fontSizeMain;
+      font-size: $fontSizeM;
     }
   }
   
@@ -72,13 +72,13 @@
     &-left {
       @include col60(0, column);
       font-family: $basicFont;
-      font-size: $fontSizeMedium;
+      font-size: $fontSizeL;
       line-height: 1.65;
       max-width: 780px;
       
       @include respond(mobile) {
         @include col100(0, column);
-        font-size: $fontSizeMain;
+        font-size: $fontSizeM;
         line-height: 1.6;
       }
       
@@ -94,11 +94,11 @@
         }
         
         figcaption {
-          font-size: $fontSizeMain;
+          font-size: $fontSizeM;
           margin: 8px 0 0 0;
           
           @include respond(mobile) {
-            font-size: $fontSizeSmall;
+            font-size: $fontSizeS;
           }
         }
       }
@@ -107,7 +107,7 @@
     &-right {
       @include col40(18px 5% 0 15%, column);
       font-family: $basicFont;
-      font-size: $fontSizeMain;
+      font-size: $fontSizeM;
       line-height: 1.5;
       
       @include respond(mobile) {
@@ -130,11 +130,11 @@
         }
         
         figcaption {
-          font-size: $fontSizeMain;
+          font-size: $fontSizeM;
           margin: 8px 0 0 0;
           
           @include respond(mobile) {
-            font-size: $fontSizeSmall;
+            font-size: $fontSizeS;
           }
         }
       }
@@ -145,8 +145,7 @@
     }
     
     &-secondary-info {
-      font-size: $fontSizeMain;
-      line-height: 1.65;
+      font-size: $fontSizeL;
       margin: 0 0 32px 0;
       padding: 0 32px 0 16px;
       border-left: 4px solid $coldBlue;

@@ -1,0 +1,60 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-author/atricle-author
+include ../../components/article-year/article-year
+include ../../components/figure/figure
+
+- var title = 'Привал, сезон первый'
+- var desc = 'Десять недель телеграм-канал «Чернотроп» советовал вам по одному реалистическому рассказу, достойному внимания. Пора подвести итоги.'
+- var id = 'rest-01'
+
+doctype html
+html(prefix="og: http://ogp.me/ns#")
++head(`${id}`,`${title}`, `${desc}`)
+body.body_light
+    +header('dark')
+    article.article
+        div.article__header
+            h1.article__headline=title
+            p.article__description=desc
+        div.article__content
+            div.article__content-row
+                div.article__content-left
+                    p Пару месяцев назад я, единственный автор «Чернотропа» Артём Сошников, пытался поддержать жизнь в телеграм-канале, который тощал на просмотры и терял по несколько десятков читателей в месяц. Я мог бы набить ленту репостами или взаимопиаром, но я по-прежнему считаю маркетинговые техники неуважением к читателю. Обсуждать литературные сплетни или перемывать косточки одним и тем же книгам, созданным в недрах дочерних редакций монополии «ЭКСМО», не захотелось — и я запустил рубрику «Привал», каждый выпуск которой символизировал бы собой передышку в нашем совместном походе от Белинского к новым реалистам.
+                    p Передышка в итоге растянулась на десять выпусков подряд. Кажется, мы не просто перевели дух, а расквартировались на зиму. Раз в неделю я рекомендовал по одному русскому реалистическому рассказу, на который не жалко потратить вечер выходного дня. Я намеренно брал как состоявшихся авторов, так и молодых, пока ещё малоизвестных — и, раз уж рубрика носит рекомендательный характер, позволил себе опубликовать несколько рассказов выпускников литературной мастерской Аствацатурова и Орехова, в которой я учился. Обычно я не оцениваю прозу тех, с кем знаком лично. Но здесь (каюсь) не удержался.
+                div.article__content-right
+                    +figure(`${id}`, '')
+            div.article__content-row
+                div.article__content-left
+                    p Вот они, десять выпусков по порядку:
+                        ul
+                            li
+                                a(href="rest-valitov-orpheus.html")
+                                    span Тимур Валитов «Орфей»
+                            li
+                                a(href="rest-zamyatin-waterflood.html")
+                                    span Евгений Замятин «Наводнение»
+                            li
+                                a(href="rest-rasputin-french-lessons.html")
+                                    span Валентин Распутин «Уроки французского»
+                            li
+                                a(href="rest-gorchev-from-spb-to-moscow.html")
+                                    span Дмитрий Горчев «Из Петербурга в Москву»
+                            li
+                                a(href="rest-vampilov-duck-shooting.html")
+                                    span Александр Вампилов «Утиная охота»
+                            li
+                                a(href="rest-nosov-two-tablets.html")
+                                    span Сергей Носов «Две таблички на газоне»
+                            li
+                                a(href="rest-rybnikova-train-to-sakhalin.html")
+                                    span Мария Рыбникова «Поезд на Сахалин»
+                            li
+                                a(href="rest-blagoveschenskiy-on-factory.html")
+                                    span Николай Благовещенский «На Литейном заводе»
+                            li
+                                a(href="rest-mlynchik-pool.html")
+                                    span Татьяна Млынчик «Бассейн»
+                    p Надеюсь, каждый из рассказов скрасит ваше заточение в период самоизоляции. Летом, уже в новую мировую эпоху, я постараюсь запустить второй сезон.
+                    +articleAuthor('С надеждой на лучшее, ', 'Артём Сошников', 'http://soshnikov-writing.art/')
+                    +articleYear('Петроград', '2020')

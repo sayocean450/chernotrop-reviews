@@ -2,21 +2,21 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
 include ../../components/article-year/article-year
+include ../../components/figure/figure
+
+- var title = 'Мёртвый китайский Хемингуэй'
+- var desc = 'Его звали Ху Бо и он покончил с собой. «Сеанс» перевёл несколько рассказов.'
+- var id = 'hu-bo-elephant'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-      'http://chernotrop.reviews/hu-bo-elephant',
-      'article',
-      'Мёртвый китайский Хемингуэй',
-      'Его звали Ху Бо и он покончил с собой. «Сеанс» перевёл несколько рассказов',
-      'http://chernotrop.reviews/img/hu-bo-elephant-og.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_light
     +header('dark')
     article.article
         div.article__header
-            h1.article__headline Мёртвый китайский Хемингуэй
-            p.article__description Его звали Ху Бо и он покончил с собой. «Сеанс» перевёл несколько рассказов
+            h1.article__headline=title
+            p.article__description=desc
         div.article__content
             div.article__content-row
                 div.article__content-left
@@ -24,9 +24,7 @@ body.body_light
                     p На сеанс я попал случайно — планировал поспать четыре часа в кинозале во время сессии ШКЖ. Ну, ладно, не буду врать — во мне теплилась надежда не уснуть и впервые за двадцать восемь лет посмотреть китайскую картину. Интригу нагнетал тот факт, что Ху Бо недавно покончил с собой. По слухам, из-за конфликта с продюсерами.
                     p Перед сеансом развлекался тем, что искал взглядом Посвящённых. Они должны были надуваться, как павлины — потому что, во-первых, они знают, кто такой Ху Бо. Во-вторых, он умер, а это же всегда так загадочно и вообще волнует. В-третьих, друзья и подружки фильм не посмотрят, потому что показ эксклюзивный. Ради такого можно пережить и переполненный мочевой пузырь, и затёкшие до коликов ноги.
                 div.article__content-right
-                    figure
-                        img(src="../../img/salnikov-1904-cover.jpg")
-                        figcaption Номер «Искусста кино», в котором опубликлован рассказ.
+                    +figure(`${id}`, 'Номер «Искусста кино», в котором опубликлован рассказ.')
             div.article__content-row
                 div.article__content-left
                     p Но никто почему-то не выделывался. Наверное, потому что москвичей уже ничем не удивишь… Перед показом к зрителям вышли молодые кинокритики, пробубнили что-то вроде «нуу, ммм, это вот фильм ху бо, его показывали на берлинском кинофестивале, ху бо покончил с собой, больше ничего не снимет, приятного просмотра, всё такое». К моему счастью, парень справа сдался через два часа и ушёл, так что я смог сесть по-человечески. Никогда бы не подумал, что с таким удовольствием протяну ноги…
@@ -36,5 +34,5 @@ body.body_light
                     p
                         a(href="http://old.kinoart.ru/archive/2018/5-6/khu-tsyan-slon-sidit-spokojno")
                             span Читать рассказ «Слон сидит спокойно» онлайн
-                    +articleAuthor('Артём Сошников', 'http://soshnikov-writing.art/')
+                    +articleAuthor('','Артём Сошников', 'http://soshnikov-writing.art/')
                     +articleYear('Петроград', '2019')

@@ -1,5 +1,6 @@
-mixin articleAuthor(name, link)
+mixin articleAuthor(reason, name, link)
     div.article-author ⚒︎
         br
+        span=reason
         a(href=link target="blank")
             span=name

@@ -1,0 +1,16 @@
+include ../../components/section-header/section-header
+include ../../components/article-separator/article-separator
+include ../../components/article50/article50
+include ../../components/article20/article20
+include ../../components/article15/article15
+
+mixin articles2019-2()
+    div.articles-2019-2
+        +sectionHeader('', 'Книжные рецензии')
+        div.articles-2019-2__row-fs
+            +article50('ivanov-foodunit', 'Нет, не о вампирах', 'О новом романе Алексея Иванова «Пищеблок», его надуровнях и скрытой под вампирской тематикой морали')
+            +article50('petrovsky-darling', 'Дорогая, я дома', 'О романе евроскептика и русского националиста Дмитрия Петровского')
+        +sectionHeader('', 'Наблюдая за журналом «Сеанс»')
+        div.articles-2019-2__row-fs
+            +article50('hu-bo-elephant', 'Мёртвый китайский Хемингуэй', 'Его звали Ху Бо и он покончил с собой. «Сеанс» перевёл несколько рассказов')
+            +article50('salnikov-1904', 'Бенджамин Баттон современной прозы', 'Если развернуть публикации Алексея Сальникова вспять, проглядывается логичный путь развития молодого писателя')

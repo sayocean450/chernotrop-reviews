@@ -1,0 +1,27 @@
+.article50 {
+  color: inherit;
+  @include col50(0 48px 0 0, row, flex-start, stretch);
+  overflow: hidden;
+  
+  &__img {
+    @include col50(0, row, center);
+    flex: 1 1 auto;
+    overflow: hidden;
+  }
+  
+  &__content {
+    @include col50(0 0 0 24px, column);
+    
+    h3 {
+      color: $coldBlue;
+      margin-bottom: 8px;
+      line-height: 1.7;
+    }
+    
+    p {
+      font-size: $fontSizeL;
+      color: $white;
+      margin-bottom: 0;
+    }
+  }
+}

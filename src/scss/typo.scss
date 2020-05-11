@@ -1,10 +1,10 @@
 @import "colors";
 
-$fontSizeSmall: 14px;
-$fontSizeMain: 16px;
-$fontSizeMedium: 20px;
-$fontSizeLarge: 28px;
-$fontSizeBig: 40px;
+$fontSizeS: 14px;
+$fontSizeM: 16px;
+$fontSizeL: 20px;
+$fontSizeXL: 28px;
+$fontSizeXXL: 40px;
 
 $accentFont: 'Arkhip', 'Georgia', serif;
 $basicFont: 'PT Root UI Regular', 'Roboto', 'Arial', sans-serif;
@@ -22,48 +22,53 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   font-family: $accentFont;
-  font-size: $fontSizeBig;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: $fontSizeXXL;
   text-transform: uppercase;
   margin: 0 0 64px 0;
   
   @include respond(mobile) {
-    font-size: $fontSizeMedium;
+    font-size: $fontSizeL;
     margin: 32px 0;
   }
 }
 
 h2 {
-  font-family: $accentFont;
-  font-size: $fontSizeBig;
-  text-transform: uppercase;
-  line-height: 1.6;
+  font-size: $fontSizeXL;
   margin: 0 0 24px 0;
   
   @include respond(mobile) {
-    font-size: $fontSizeMedium;
+    font-size: $fontSizeL;
     margin: 0 0 8px 0;
   }
 }
 
 h3 {
-  font-family: $accentFont;
-  font-size: $fontSizeMedium;
+  font-size: $fontSizeL;
   line-height: 150%;
   text-transform: uppercase;
   margin: 0 0 16px 0;
   
   @include respond(mobile) {
-    font-size: $fontSizeMain;
+    font-size: $fontSizeM;
     margin: 0 0 8px 0;
     line-height: 1.8;
   }
 }
 
+h4 {
+  font-size: $fontSizeM;
+}
+
 h5 {
-  font-size: $fontSizeMain;
-  margin: 0 0 8px 0;
+  font-size: $fontSizeS;
+  margin: 0 0 4px 0;
 }
 
 @font-face {

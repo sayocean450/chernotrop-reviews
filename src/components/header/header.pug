@@ -6,7 +6,7 @@ mixin header(theme, page, modeValue="inactive")
         div.header__logo
             +logo(theme)
         nav.header__menu
-            +mainMenu(page)
+            +menu(page)
         div.header__menu_mobile#modeValue
             if modeValue === 'active'
                 a(href="javascript:history.back()")

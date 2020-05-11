@@ -1,21 +1,22 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
+include ../../components/article-year/article-year
+include ../../components/figure/figure
+
+- var title = 'Да как ты смеешь?! «Анна Каренина» Льва Толстого'
+- var desc = 'Время идёт, роман по-прежнему не оставляет читателей равнодушными. Про Левина потихоньку забывают.'
+- var id = 'how-dare-karenina'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-    'http://chernotrop.reviews/how-dare-karenina',
-    'article',
-    'Время идёт, «Анна Каренина» по-прежнему не оставляет нас равнодушными',
-    'Правда, про Левина все потихоньку забывают.',
-    'http://chernotrop.reviews/img/how-dare-karenina-og.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_light
     +header('dark')
     article.article
         div.article__header
             h1.article__headline «Анна Каренина» Льва Толстого
-            p.article__description Время идёт, роман по-прежнему не оставляет читателя равнодушным. Про Левина потихоньку забывают.
+            p.article__description Время идёт, роман по-прежнему не оставляет читателей равнодушными. Про Левина потихоньку забывают.
         div.article__content
             div.article__content-row
                 div.article__content-left
@@ -34,9 +35,7 @@ body.body_light
                     p.article__content-main-thought В разгоняющихся двадцатых лучше писать о вечном в антураже современности. И вечное, и антураж не устаревают.
                     p Главный тому пример, ориентир и хэдлайнер — роман Льва Толстого «Анна Каренина». Больше ста сорока лет прошло, а интерес к нему не спадает. Если обмолвишься в литературной компании, что читаешь «Анну Каренину», люди тут же задают кучу вопросов или, что ещё лучше, спорят между собой.
                 div.article__content-right
-                    figure
-                        img(src="../../img/how-dare-karenina-film.jpg")
-                        figcaption Кадр из фильма «Анна Каренина», 1914.
+                    +figure(`${id}`, 'Кадр из фильма «Анна Каренина», 1914.')
             div.article__content-row
                 div.article__content-left
                     p Единого мнения о романе не существовало и при жизни Толстого, тон и ход рецензии зависели от политической направленности журнала или газеты, которые эту рецензию издавали.
@@ -60,5 +59,5 @@ body.body_light
                     p За бурей обсуждений и фантазий кроется ещё одна примета времени.  Спорщики чаще всего не трогают Левина и его экзистенциальный кризис.  Дауншифтинг лет пять как умер, а за экзистенциальный кризис  консервативного бизнесмена у нас отвечает Андрей Рубанов.
                     p Может быть, когда-нибудь, лет через тридцать, чаша весов склонится в  другую сторону и люди начнут спорить о поступках и метаниях Левина, а  Каренины отойдут на второй план. Пока же современные читатели не считают эту линию острой.
                     p Эмансипация женщин куда острее.
-                    +articleAuthor('Артём Сошников', 'http://soshnikov-writing.art/')
-            
+                    +articleAuthor('','Артём Сошников', 'http://soshnikov-writing.art/')
+                    +articleYear('Петроград', '2019')

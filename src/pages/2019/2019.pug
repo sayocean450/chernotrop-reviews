@@ -1,0 +1,23 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/menu/menu
+include ../../components/pagination/pagination
+include ../../sections/selfie-against-sword/selfie-against-sword
+include ../../sections/articles-2019/articles-2019
+include ../../sections/articles-2019-2/articles-2019-2
+
+- var title = 'Чернотроп ⚒︎ Русский реализм'
+- var desc = 'Скрещиваем русскую реалистическую прозу с современностью'
+- var id = 'default'
+
+doctype html
+html(prefix="og: http://ogp.me/ns#")
++head(`${id}`,`${title}`, `${desc}`)
+body.body_dark
+    +header('dark', 'article')
+    div.wrap
+        div.content
+            +pagination('2019')
+            +articles2019()
+            +selfieAgainstSword()
+            +articles2019-2()

@@ -1,6 +1,5 @@
 .section-header {
-  @include col100(0, column, center);
-  align-items: center;
+  @include col100(0, column);
   color: $lightGray;
   text-transform: uppercase;
   
@@ -11,12 +10,12 @@
   
   &__colon {
     font-family: $basicFont;
-    font-size: $fontSizeMain;
+    font-size: $fontSizeM;
     letter-spacing: 3px;
     margin: 0 0 12px 0;
     
     @include respond(mobile) {
-      font-size: $fontSizeSmall;
+      font-size: $fontSizeS;
     }
   }
 }

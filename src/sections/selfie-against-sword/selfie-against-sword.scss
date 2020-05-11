@@ -1,8 +1,8 @@
 .sas {
-  @include col100($mainContentMargin 72px 0 72px, column);
+  @include col100(0 0 72px 0, column);
   
   @include respond(mobile) {
-    @include col100($mainContentMarginMobile 32px 0 32px, column);
+    @include col100(0 32px 0 32px, column);
   }
   
   &__articles {
@@ -15,26 +15,26 @@
     
     &-headline {
       font-family: $accentFont;
-      font-size: $fontSizeMedium;
+      font-size: $fontSizeL;
       text-transform: uppercase;
       line-height: 1.64;
       color: $coldBlue;
       margin: 0 0 8px 0;
       
       @include respond(mobile) {
-        font-size: $fontSizeMain;
+        font-size: $fontSizeM;
         margin: 0 0 4px 0;
       }
     }
     
     &-description {
       font-family: $basicFont;
-      font-size: $fontSizeMedium;
+      font-size: $fontSizeL;
       color: $lightGray;
+      line-height: 1.4;
       
       @include respond(mobile) {
-        font-size: $fontSizeMain;
-        line-height: 1.4;
+        font-size: $fontSizeM;
       }
     }
   }
