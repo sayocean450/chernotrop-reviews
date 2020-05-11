@@ -6,7 +6,7 @@
   }
   
   &__articles {
-    @include col100(0, row);
+    @include col100(16px 0 0 0, row);
     align-items: stretch;
     
     @include respond(mobile) {

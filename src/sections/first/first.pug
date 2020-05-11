@@ -1,0 +1,24 @@
+include ../../components/section-header/section-header
+include ../../components/article-separator/article-separator
+
+mixin first()
+    div.first
+        a(href="pogodin-stories.html").first__main-article
+            div.first__main-article-img
+                img(src="../../img/pogodin-cover.jpg")
+            div.first__main-article-content
+                h3 Что почитать у Михаила Погодина
+                p Изобличение мещанских нравов, протофем-экшн и хроника невзаимной любви — шесть рассказов бывшего крепостного, ставшего тайным советником Николая I
+        div.first__secondary-articles
+            a(href="ivanov-tobol.html").first__secondary-articles-item
+                div.first__secondary-articles-itemImg
+                    img(src="../../img/ivanov-tobol-preview.jpg")
+                div.first__secondary-articles-itemContent
+                    h5 1430 страниц равнодушия.
+                    p О том, почему дилогию Алексея Иванова «Тобол» так тяжело дочитать
+            a(href="rest-s01.html").first__secondary-articles-item
+                div.first__secondary-articles-itemImg
+                    img(src="../../img/rest-s01.jpg")
+                div.first__secondary-articles-itemContent
+                    h5 «Привал», сезон первый
+                    p Десять недель подряд мы советовали вам реалистические рассказы, достойные внимания. Пора подвести итоги

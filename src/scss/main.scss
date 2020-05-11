@@ -2,11 +2,12 @@
 @import "colors";
 @import "typo";
 
-$mainContentMargin: 72px;
+$mainContentMargin: 96px;
 $mainContentMarginMobile: 32px;
 
 body {
   margin: 0;
+  line-height: 1.36;
 }
 
 .body_dark {
@@ -17,72 +18,8 @@ body {
   background-color: $white;
 }
 
-.main {
-  @include col100(144px 72px 48px 72px, row, space-between);
-  
-  @include respond(mobile) {
-    @include col100(96px 32px 12px 32px, column);
-  }
-  
-  &__description {
-    @include col50(0, column);
-    line-height: 1.4;
-    color: $lightGray;
-    text-transform: lowercase;
-    
-    &-row {
-      @include col100(0 0 48px 0, column);
-      
-      @include respond(mobile) {
-        @include col100(0 0 24px 0, column);
-        
-        h3 {
-          color: $coldBlue;
-        }
-      }
-    }
-    
-    p {
-      font-size: $fontSizeMedium;
-      font-family: $basicFont;
-      
-      @include respond(mobile) {
-        font-size: $fontSizeMain;
-      }
-    }
-    
-    @include respond(mobile) {
-      @include col100(0, column);
-      font-size: $fontSizeMain;
-    }
-    
-    p {
-      margin: 0 0 24px 0;
-    }
-  }
-  
-  &__description-right {
-    @include col40(0, column);
-    
-    line-height: 1.4;
-    color: $lightGray;
-    
-    p {
-      font-size: $fontSizeMedium;
-      font-family: $basicFont;
-      
-      @include respond(mobile) {
-        font-size: $fontSizeMain;
-      }
-    }
-  }
-}
-
-.menu {
-  &_mobile {
-    @include col100(0, column);
-    background-color: lightcyan;
-  }
+.wrap {
+  @include col100(72px 0 0 0, column);
 }
 
 blockquote {

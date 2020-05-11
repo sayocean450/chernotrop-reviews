@@ -4,7 +4,7 @@ $fontSizeSmall: 14px;
 $fontSizeMain: 16px;
 $fontSizeMedium: 20px;
 $fontSizeLarge: 28px;
-$fontSizeBig: 48px;
+$fontSizeBig: 40px;
 
 $accentFont: 'Arkhip', 'Georgia', serif;
 $basicFont: 'PT Root UI Regular', 'Roboto', 'Arial', sans-serif;
@@ -50,6 +50,7 @@ h2 {
 h3 {
   font-family: $accentFont;
   font-size: $fontSizeMedium;
+  line-height: 150%;
   text-transform: uppercase;
   margin: 0 0 16px 0;
   
