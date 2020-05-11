@@ -1,6 +1,6 @@
 include ../../components/head/head
 include ../../components/header/header
-include ../../components/main-menu/main-menu
+include ../../components/menu/menu
 include ../../components/camping-article/camping-article
 include ../../components/camping-article-external/camping-article-external
 include ../../components/camping-year/camping-year
@@ -16,9 +16,6 @@ html(prefix="og: http://ogp.me/ns#")
 body.body_dark
     +header('dark')
     section.main
-        div.main__description
-            p «лагерь» — раздел сайта, в котором копятся рецензии создателя журнала «чернотроп» о гуманитраном нон-фикшне, современной музыке и прочих областях современной культуры.
-        +mainMenu('camping')
     section.camping
         div.camping__row
             +campingYear('2020')

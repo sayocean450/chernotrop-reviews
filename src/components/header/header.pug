@@ -1,10 +1,13 @@
 include ../../components/logo/logo
-mixin header(theme, modeValue="inactive")
+include ../menu/menu
+mixin header(theme, page, modeValue="inactive")
     include ../icon/icon
     header.header(class=`header_${theme}`)
         div.header__logo
             +logo(theme)
-        div.header__menu#modeValue
+        nav.header__menu
+            +mainMenu(page)
+        div.header__menu_mobile#modeValue
             if modeValue === 'active'
                 a(href="javascript:history.back()")
                     +iconClose('24px').icon_white

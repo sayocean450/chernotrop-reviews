@@ -1,6 +1,6 @@
 include ../../components/head/head
 include ../../components/header/header
-include ../../components/main-menu/main-menu
+include ../../components/menu/menu
 include ../../sections/selfie-against-sword/selfie-against-sword
 doctype html
 html(prefix="og: http://ogp.me/ns#")
@@ -14,10 +14,6 @@ html(prefix="og: http://ogp.me/ns#")
 body.body_dark
     +header('dark')
     section.main
-        div.main__description
-            p «да как ты смеешь?!» — рубрика, в которой артём сошников бесстыдно скрещивает русскую классику с современностью.
-            p именно так выглядят сочинения, если не заставлять школьников заучивать мнения наизусть.
-        +mainMenu('howDare')
     section.how-dare
         a(href="how-dare-idiot.html").how-dare__col
             div.how-dare__pic

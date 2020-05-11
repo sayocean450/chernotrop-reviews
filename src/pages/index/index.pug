@@ -1,6 +1,6 @@
 include ../../components/head/head
 include ../../components/header/header
-include ../../components/main-menu/main-menu
+include ../../components/menu/menu
 include ../../sections/selfie-against-sword/selfie-against-sword
 doctype html
 html(prefix="og: http://ogp.me/ns#")
@@ -12,10 +12,6 @@ html(prefix="og: http://ogp.me/ns#")
     'http://chernotrop.reviews/img/default.jpg'
     )
 body.body_dark
-    +header('dark')
+    +header('dark', '')
     section.main
-        div.main__description
-            p мы убежали в города, спрятались в офисы, но нас всё так же окружает ледяная пустыня смерти и равнодушия.
-            p реалистическая проза защищает нас от ужаса действительности — не даёт замёрзнуть узкой ленточке чернотропа, сбиться с пути и одиноко умереть в сугробе.
-        +mainMenu('')
     +selfieAgainstSword()

@@ -1,0 +1,17 @@
+.menu {
+  &-item {
+    @include colauto(0 24px 0 0);
+    
+    &_active {
+      color: $gray;
+      cursor: not-allowed;
+    }
+    
+    @include respond(mobile) {
+      @include col100(0, row, center);
+      height: 48px;
+      font-family: $basicFont;
+      font-size: $fontSizeMedium;
+      }
+  }
+}

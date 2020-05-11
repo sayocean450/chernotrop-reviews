@@ -2,7 +2,7 @@
 @import "../../scss/typo";
 
 .header {
-  @include col100(0 12px 0 72px, row, flex-start, center);
+  @include col100(0 72px 0 72px, row, flex-start, center);
   height: 72px;
   position: fixed;
   z-index: 2;
@@ -26,16 +26,24 @@
   }
   
   &__menu {
-    display: none;
+    @include col80(0, row, flex-end);
     
-    @include respond(tablet) {
+    @include respond(mobile) {
       display: none;
     }
     
-    @include respond(mobile) {
-      display: flex;
-      @include col50(0, column, center, flex-end);
-      align-items: flex-end;
+    &_mobile {
+      display: none;
+      
+      @include respond(tablet) {
+        display: none;
+      }
+      
+      @include respond(mobile) {
+        display: flex;
+        @include col50(0, column, center, flex-end);
+        align-items: flex-end;
+      }
     }
   }
   

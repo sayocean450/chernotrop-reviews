@@ -1,0 +1,21 @@
+mixin mainMenu(active)
+    if active === 'contacts'
+        a.menu-item(href="index.html", target="blank") главная
+        a.menu-item(href="features.html") рубрики
+        a.menu-item.menu-item_active(href="contacts.html") контакты
+        a.menu-item(href="http://ttttt.me/blacktrope")(target="blank") telegram-канал
+    else if active === 'features'
+        a.menu-item(href="index.html", target="blank") главная
+        a.menu-item.menu-item_active(href="features.html") рубрики
+        a.menu-item(href="contacts.html") контакты
+        a.menu-item(href="http://ttttt.me/blacktrope")(target="blank") telegram-канал
+    else if active === 'camping'
+        a.menu-item(href="index.html", target="blank") главная
+        a.menu-item(href="features.html") рубрики
+        a.menu-item(href="contacts.html") контакты
+        a.menu-item(href="http://ttttt.me/blacktrope")(target="blank") telegram-канал
+    else
+        a.menu-item.menu-item_active(href="index.html", target="blank") главная
+        a.menu-item(href="features.html") рубрики
+        a.menu-item(href="contacts.html") контакты
+        a.menu-item(href="http://ttttt.me/blacktrope")(target="blank") telegram-канал
