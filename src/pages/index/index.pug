@@ -3,15 +3,14 @@ include ../../components/header/header
 include ../../components/menu/menu
 include ../../components/pagination/pagination
 include ../../sections/articles-2020/articles-2020
+
+- var title = 'Чернотроп ⚒︎ Русский реализм'
+- var desc = 'Скрещиваем русскую реалистическую прозу с современностью'
+- var id = 'default'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-    'http://chernotrop.reviews/',
-    'website',
-    'Чернотроп ⚒︎ Русский реализм',
-    'Скрещиваем русскую реалистическую прозу с современностью',
-    'http://chernotrop.reviews/img/default.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_dark
     +header('dark', '')
     div.wrap

@@ -1,13 +1,13 @@
 mixin menu(active)
     if active === 'contacts'
         a.menu-item(href="index.html", target="blank") главная
-        a.menu-item.menu-item_active(href="contacts.html") контакты
+        a(href="contacts.html")(class=`menu-item menu-item_active`) контакты
         a.menu-item(href="http://ttttt.me/blacktrope")(target="blank") telegram-канал
     else if active === 'article'
         a.menu-item(href="index.html", target="blank") главная
         a.menu-item(href="contacts.html") контакты
         a.menu-item(href="http://ttttt.me/blacktrope")(target="blank") telegram-канал
     else
-        a.menu-item.menu-item_active(href="index.html", target="blank") главная
+        a(href="index.html", target="blank")(class=`menu-item menu-item_active`) главная
         a.menu-item(href="contacts.html") контакты
         a.menu-item(href="http://ttttt.me/blacktrope")(target="blank") telegram-канал
