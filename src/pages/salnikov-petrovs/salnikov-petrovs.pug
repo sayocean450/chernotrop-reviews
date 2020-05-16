@@ -2,21 +2,20 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
 include ../../components/article-year/article-year
+
+- var title = 'Вылизан, но'
+- var desc = 'О том, как желание угодить читателю испортило новый роман Алексея Сальникова'
+- var id = 'salnikov-petrovs'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-      'http://chernotrop.reviews/salnikov-petrovs',
-      'article',
-      'О «Петровых в гриппе» Алексея Сальникова',
-      'Редкий пример того, как поэтический опыт автора благотворно сказывается на его прозе.',
-      'http://chernotrop.reviews/img/salnikov-petrovs-og.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_light
     +header('dark')
     article.article
         div.article__header
-            h1.article__headline О «Петровых в гриппе» Алексея Сальникова
-            p.article__description Редкий пример того, как поэтический опыт автора благотворно сказывается на его прозе.
+            h1.article__headline=title
+            p.article__description=desc
         div.article__content
             div.article__content-row
                 div.article__content-left

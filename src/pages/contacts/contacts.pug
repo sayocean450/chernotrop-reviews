@@ -1,14 +1,14 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/menu/menu
+
+- var title = 'Контакты ⚒︎ Чернотроп'
+- var desc = 'Скрещиваем русскую реалистическую прозу с современностью'
+- var id = 'default'
+
 doctype html(prefix="og: http://ogp.me/ns#")
 html
-    +head(
-    'Контакты ⚒︎ Чернотроп',
-    'Скрещиваем русскую реалистическую прозу с современностью',
-    'http://chernotrop.reviews/img/default.jpg',
-    ''
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_dark
     +header('dark', 'contacts')
     div.wrap

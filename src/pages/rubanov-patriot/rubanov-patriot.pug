@@ -2,21 +2,20 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
 include ../../components/article-year/article-year
+
+- var title = 'О романе Андрея Рубанова «Патриот»'
+- var desc = 'Роман-победитель «Ясной Поляны» получился неоспоримо мастерским — плотно сбитым, монолитным, с великолепными диалогами и плавно перетекающим сюжетом'
+- var id = 'rubanov-patriot'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-      'http://chernotrop.reviews/rubanov-patriot',
-      'article',
-      'О романе Андрея Рубанова «Патриот»',
-      'Роман-победитель «Ясной Поляны» получился неоспоримо мастерским — плотно сбитым, монолитным, с великолепными диалогами и плавно перетекающим сюжетом.',
-      'http://chernotrop.reviews/img/rubanov-patriot-og.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_light
     +header('dark')
     article.article
         div.article__header
-            h1.article__headline О романе Андрея Рубанова «Патриот»
-            p.article__description Роман-победитель «Ясной Поляны» получился неоспоримо мастерским — плотно сбитым, монолитным, с великолепными диалогами и плавно перетекающим сюжетом.
+            h1.article__headline=title
+            p.article__description=desc
         div.article__content
             div.article__content-row
                 div.article__content-left

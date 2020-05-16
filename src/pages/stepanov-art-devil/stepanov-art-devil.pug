@@ -2,15 +2,14 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
 include ../../components/article-year/article-year
+
+- var title = 'Бес искусства'
+- var desc = 'О плутовском романе Андрея Степанова — талантливом, но чересчур тактичном'
+- var id = 'stepanov-art-devil'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-      'http://chernotrop.reviews/stepanov-art-devil',
-      'article',
-      'Бес искусства',
-      'О плутовском романе Андрея Степанова — талантливом, но чересчур тактичном',
-      'http://chernotrop.reviews/img/stepanov-art-devil-og.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_light
     +header('dark')
     article.article

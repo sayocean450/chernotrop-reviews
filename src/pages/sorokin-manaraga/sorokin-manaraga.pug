@@ -2,21 +2,20 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
 include ../../components/article-year/article-year
+
+- var title = 'О романе Владимира Сорокина «Манарага»'
+- var desc = 'Неплохо, но до пьедестала не дотягивает'
+- var id = 'sorokin-manaraga'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-      'http://chernotrop.reviews/sorokin-manaraga',
-      'article',
-      'О романе Владимира Сорокина «Манарага»',
-      'Неплохо, но до пьедестала не дотягивает.',
-      'http://chernotrop.reviews/img/sorokin-manaraga-og.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_light
     +header('dark')
     article.article
         div.article__header
-            h1.article__headline О романе Владимира Сорокина «Манарага»
-            p.article__description Неплохо, но до пьедестала не дотягивает.
+            h1.article__headline=title
+            p.article__description=desc
         div.article__content
             div.article__content-row
                 div.article__content-left

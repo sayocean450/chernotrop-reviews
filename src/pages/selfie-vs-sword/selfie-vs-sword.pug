@@ -1,21 +1,20 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
+
+- var title = 'Русская молодёжь одержима путешествиями?'
+- var desc = 'Артём Сошников рассказывает на примере прозы XIX-го века, почему вам порой тошно заглядывать в Инстаграм'
+- var id = 'selfie-vs-sword'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-      'http://chernotrop.reviews/selfie-vs-sword',
-      'article',
-      'Русская молодёжь одержима путешествиями? ⚒ Чернотроп',
-      'Рассказываю на примере прозы 19-го века, почему вам порой тошно заглядывать в Инстаграм.',
-      'http://chernotrop.reviews/img/selfie-vs-sword-og.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_light
     +header('dark')
     article.article
         div.article__header
-            h1.article__headline Русская молодёжь одержима путешествиями?
-            p.article__description Рассказываем на примере прозы девятнадцатого века, почему вам порой тошно заглядывать в Инстаграм.
+            h1.article__headline=title
+            p.article__description=desc
         div.article__content
             div.article__content-row
                 div.article__content-left
@@ -34,20 +33,15 @@ body.body_light
                         figcaption Михаил Полевой закатывает глаза
             div.article__content-row
                 div.article__content-left
-                    p Хочется заявить: «Русская молодёжь одержима путешествиями!», но тебя тут же макнут лицом в нюансы, потребуют статистику.
+                    p Хочется заявить: «Русская молодёжь одержима путешествиями!», но тебя тут же макнут лицом в нюансы, потребуют статистику. Что ж, вот она.
                     div.article__content-secondary-info
                         p
-                            | В 2018-м году за рубеж выехало 42 миллиона россиян —
+                            | В 2019-м году 70% российских миллениалов назвали главным приоритетом «путешествовать и увидеть мир» —
                             =" "
-                            a(href="https://journal.tinkoff.ru/russo-turisto/")
-                                span Росстат
-                    div.article__content-secondary-info
-                        p
-                            | Около трети россиян и две трети москвичей бывали за границей. При этом действующий иностранный паспорт есть у четверти граждан страны и около 56% жителей столицы —
-                            =" "
-                            a(href="https://ria.ru/20181213/1547894266.html")
-                                span Левада
-                    p Не очень-то похоже на помешательство! Но жизнь богаче статистики. Трэвел-блогеры снимают сливки с Ютуба, у «Орла и решки» миллионы подписчиков в соц.сетях, порноактрисы одним из плюсов профессии
+                            a(href="https://pro.rbc.ru/news/5ce2de0c9a794743657dce2f")
+                                span Deloitte
+                        p 80% опрошенных считают, что это достижимо.
+                    p Впрочем, жизнь богаче статистики. Трэвел-блогеры снимают сливки с Ютуба, у «Орла и решки» миллионы подписчиков в соц.сетях, порноактрисы одним из плюсов профессии
                         =" "
                         a(href="https://youtu.be/g9UQ-qdyy_4?t=5255")
                             span называют

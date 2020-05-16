@@ -4,15 +4,13 @@ include ../../components/menu/menu
 include ../../components/pagination/pagination
 include ../../sections/articles-2018/articles-2018
 
+- var title = 'Чернотроп ⚒︎ Статьи за 2018-й год'
+- var desc = 'Скрещиваем русскую реалистическую прозу с современностью'
+- var id = 'default'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-    'http://chernotrop.reviews/',
-    'website',
-    'Чернотроп ⚒︎ Русский реализм',
-    'Скрещиваем русскую реалистическую прозу с современностью',
-    'http://chernotrop.reviews/img/default.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_dark
     +header('dark', 'article')
     div.wrap

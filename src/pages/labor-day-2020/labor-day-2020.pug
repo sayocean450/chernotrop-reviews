@@ -2,21 +2,20 @@ include ../../components/head/head
 include ../../components/header/header
 include ../../components/article-author/atricle-author
 include ../../components/article-year/article-year
+
+- var title = 'Самый важный день самоизоляции'
+- var desc = 'О том, почему ни в коем случае нельзя забывать Первомай'
+- var id = 'labor-day-2020'
+
 doctype html
 html(prefix="og: http://ogp.me/ns#")
-    +head(
-      'http://chernotrop.reviews/labor-day-2020',
-      'article',
-      'Самый важный день самоизоляции',
-      'О том, почему ни в коем случае нельзя забывать Первомай',
-      'http://chernotrop.reviews/img/labor-day-2020-og.jpg'
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_light
     +header('dark')
     article.article
         div.article__header
-            h1.article__headline Самый важный день самоизоляции
-            p.article__description О том, почему ни в коем случае нельзя забывать Первомай.
+            h1.article__headline=title
+            p.article__description=desc
         div.article__content
             div.article__content-row
                 div.article__content-left
