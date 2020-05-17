@@ -1,15 +1,14 @@
 include ../../components/head/head
 include ../../components/header/header
 include ../../components/menu/menu
-include ../../sections/selfie-against-sword/selfie-against-sword
+
+- var title = 'Чернотроп ⚒︎ Русский реализм'
+- var desc = 'Скрещиваем русскую реалистическую прозу с современностью'
+- var id = 'default'
+
 doctype html(prefix="og: http://ogp.me/ns#")
 html
-    +head(
-      'Чернотроп ⚒︎ Русский реализм',
-      'Скрещиваем русскую реалистическую прозу с современностью',
-      'http://sayocean.me/img/default.jpg',
-      ''
-    )
++head(`${id}`,`${title}`, `${desc}`)
 body.body_dark
     +header('dark', '', 'active')
     section.content_menu

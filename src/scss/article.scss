@@ -80,10 +80,11 @@
       
       blockquote {
         margin: 0 0 32px 0;
-        font-size: $fontSizeM;
+        font-size: $fontSizeL;
         
         @include respond(mobile) {
           margin: 8px 0 32px 0;
+          font-size: $fontSizeM;
         }
       }
       
