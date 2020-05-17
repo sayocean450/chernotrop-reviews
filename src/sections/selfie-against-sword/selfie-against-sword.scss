@@ -2,7 +2,7 @@
   @include col100(0 0 72px 0, column);
   
   @include respond(mobile) {
-    @include col100(0 32px 0 32px, column);
+    @include col100(48px 8px 72px 8px, column);
   }
   
   &__articles {

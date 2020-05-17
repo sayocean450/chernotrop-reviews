@@ -1,6 +1,15 @@
 .article15 {
   @include col15(0, column, flex-start, stretch);
   
+  @include respond(mobile) {
+    
+    & h5 {
+      font-size: $fontSizeM;
+    }
+    
+    @include col100(0 0 32px 0, column);
+  }
+  
   &__img {
     @include col100(0, column);
     
@@ -12,6 +21,10 @@
   
   &__content {
     @include col100(24px 0 0 0, column);
+    
+    @include respond(mobile) {
+      @include col100(20px 0 0 0, column);
+    }
     
     h5 {
       color: $coldBlue;

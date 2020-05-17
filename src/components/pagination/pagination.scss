@@ -4,8 +4,17 @@
   text-transform: uppercase;
   font-size: $fontSizeL;
   
+  @include respond(mobile) {
+    @include col100(0 0 24px 0);
+    font-size: $fontSizeM;
+  }
+  
   &__year {
     @include colauto(0 16px 0 0, column, center);
+    
+    @include respond(mobile) {
+      @include colauto(0 32px 0 0, column, center);
+    }
     
     &_active {
       color: $white;

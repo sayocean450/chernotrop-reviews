@@ -9,10 +9,6 @@
       color: $black;
     }
   }
-  h3 {
-    margin-top: 32px;
-    font-size: $fontSizeXL;
-  }
   
   &__header {
     @include col100(96px 72px, column);
@@ -84,6 +80,11 @@
       
       blockquote {
         margin: 0 0 32px 0;
+        font-size: $fontSizeM;
+        
+        @include respond(mobile) {
+          margin: 8px 0 32px 0;
+        }
       }
       
       figure {
@@ -149,6 +150,11 @@
       margin: 0 0 32px 0;
       padding: 0 32px 0 16px;
       border-left: 4px solid $coldBlue;
+      
+      @include respond(mobile) {
+        margin: 8px 0 32px 0;
+        font-size: $fontSizeM;
+      }
       
       p {
         margin: 8px 0 8px 0;

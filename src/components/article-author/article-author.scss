@@ -3,6 +3,7 @@
   margin-top: 32px;
   
   @include respond(mobile) {
-    font-size: $fontSizeS;
+    margin: 24px 0 0 0;
+    font-size: $fontSizeM;
   }
 }

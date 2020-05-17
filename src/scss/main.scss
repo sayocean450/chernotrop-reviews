@@ -25,46 +25,33 @@ body {
 .content {
   @include col100($mainContentMargin 72px, column);
   
+  @include respond(mobile) {
+    @include col100(8px 24px, column)
+  }
+  
+  &_menu {
+    @include col100(0, column, center);
+    height: 100vh;
+    align-self: center;
+  }
+  
   &__text {
     @include col50(0, column);
     color: $white;
     font-size: $fontSizeL;
     
+    @include respond(mobile) {
+      @include col100(0, column);
+      font-size: $fontSizeM;
+    }
+    
     &-section {
       @include col100(0 0 48px 0, column);
+      
+      @include respond(mobile) {
+        @include col100(0 0 24px 0, column);
+        font-size: $fontSizeM;
+      }
     }
   }
-}
-
-blockquote {
-  font-size: $fontSizeL;
-  padding: 0 32px 0 16px;
-  border-left: 4px solid $deepRed;
-  
-  p {
-    margin: 16px 0 16px 0;
-    
-    &:first-child {
-      margin-top: 8px;
-    }
-    
-    &:last-child {
-      margin-bottom: 8px;
-    }
-  }
-  
-  @include respond(mobile) {
-    padding: 0 16px 0 16px;
-    font-size: $fontSizeS;
-  }
-}
-
-ul {
-  margin: 8px 0 24px 0;
-  padding: 0 0 0 24px;
-}
-
-li {
-  list-style-type: decimal;
-  margin: 0 0 8px 0;
 }

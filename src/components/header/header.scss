@@ -9,7 +9,7 @@
   top: 0;
   
   @include respond(mobile) {
-    @include col100(0 24px 0 32px, row);
+    @include col100(0 24px 0 24px, row);
     align-items: center;
     height: 48px;
   }

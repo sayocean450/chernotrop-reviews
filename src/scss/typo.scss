@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5 {
   font-family: $accentFont;
   text-transform: uppercase;
   line-height: 1.6;
+  
+  @include respond(mobile) {
+    line-height: 1.8;
+  }
 }
 
 h1 {
@@ -57,8 +61,7 @@ h3 {
   
   @include respond(mobile) {
     font-size: $fontSizeM;
-    margin: 0 0 8px 0;
-    line-height: 1.8;
+    margin: 16px 0 8px 0;
   }
 }
 
@@ -69,6 +72,38 @@ h4 {
 h5 {
   font-size: $fontSizeS;
   margin: 0 0 4px 0;
+}
+
+blockquote {
+  font-size: $fontSizeL;
+  padding: 0 32px 0 16px;
+  border-left: 4px solid $deepRed;
+  
+  @include respond(mobile) {
+    padding: 0 16px;
+  }
+  
+  p {
+    margin: 16px 0 16px 0;
+    
+    &:first-child {
+      margin-top: 8px;
+    }
+    
+    &:last-child {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+ul {
+  margin: 8px 0 0 0;
+  padding: 0 0 0 24px;
+}
+
+li {
+  list-style-type: decimal;
+  margin: 0 0 8px 0;
 }
 
 @font-face {

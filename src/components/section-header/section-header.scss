@@ -4,7 +4,7 @@
   text-transform: uppercase;
   
   @include respond(mobile) {
-    @include col100(0, column);
+    @include col100(0 0 16px 0, column);
     align-items: flex-start;
   }
   

@@ -5,17 +5,19 @@
     
     &-sb {
       @include col100(0 0 72px 0, row, space-between, stretch);
+      
+      @include respond(mobile) {
+        @include col100(0, column);
+      }
     }
     
     &-fs {
-      @include col100(0, row);
+      @include col100(0, row, space-between, stretch);
+      flex-grow: 4;
+      flex-wrap: wrap;
       
-      & .article15 {
-        margin-right: 5%;
-      }
-      
-      & .article20 {
-        margin-right: 5%;
+      @include respond(mobile) {
+        flex-grow: 2;
       }
     }
   }
