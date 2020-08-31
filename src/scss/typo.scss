@@ -11,6 +11,7 @@ $basicFont: 'PT Root UI Regular', 'Roboto', 'Arial', sans-serif;
 
 p {
   margin: 0 0 32px 0;
+  font-family: $basicFont;
   
   @include respond(mobile) {
     margin: 0 0 24px 0;
