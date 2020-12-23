@@ -1,0 +1,46 @@
+.article100 {
+  color: inherit;
+  @include col100(48px, row);
+  overflow: hidden;
+  
+  @include respond(mobile) {
+    @include col100(24px 24px 32px 24px, column);
+    margin: 0 0 32px 0;
+  }
+  
+  &__content {
+    @include col40(0 0 0 24px, column);
+    
+    @include respond(mobile) {
+      @include col100(4px 0 0 0, column);
+    }
+    
+    h3 {
+      color: $coldBlue;
+      margin-bottom: 8px;
+      line-height: 1.7;
+      
+      @include respond(mobile) {
+        margin-bottom: 4px;
+      }
+    }
+    
+    p {
+      font-size: $fontSizeL;
+      color: $white;
+      margin-bottom: 0;
+      
+      @include respond(mobile) {
+        font-size: $fontSizeM;
+      }
+    }
+  }
+  
+  &_gazdanov {
+    background-image: url("../../img/gazdanov-paris.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-blend-mode: multiply;
+    
+  }
+}

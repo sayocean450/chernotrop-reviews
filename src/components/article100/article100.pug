@@ -1,0 +1,5 @@
+mixin article100(id, title, desc)
+    a(href=`${id}.html` class=`article100_${id}`).article100
+        div.article100__content
+            h3=title
+            p=desc

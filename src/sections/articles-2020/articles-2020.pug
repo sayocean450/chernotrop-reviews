@@ -1,11 +1,14 @@
 include ../../components/section-header/section-header
 include ../../components/article-separator/article-separator
+include ../../components/article100/article100
 include ../../components/article50/article50
 include ../../components/article20/article20
 include ../../components/article15/article15
 
 mixin articles2020()
     div.articles-2020
+        div.articles-2020__row-sb
+            +article100('gazdanov', 'Наблюдатель за поражёнными', 'Артём Сошников рассказывает о незаслуженно забытом писателе-эмигранте Гайто Газданове и предлагает читателям один из возможных путеводителей по его романам')
         div.articles-2020__row-sb
             +article50('pogodin-stories', 'Любовь и горе в прозе Михаила Погодина', 'Страдания крестьян, протофем-экшн и невозможность любви — в шести рассказах бывшего крепостного, доросшего до тайного советника Николая I')
             +article50('rest-01', 'Привал, сезон первый', 'Десять недель мы советовали вам по одному реалистическому рассказу, достойному внимания. Пора подвести итоги')

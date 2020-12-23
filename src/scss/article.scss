@@ -2,8 +2,9 @@
   @include col100(0, column);
   
   a {
-    color: $deepRed;
+    color: inherit;
     text-decoration: underline;
+    text-decoration-color: $deepRed;
     
     span {
       color: $black;

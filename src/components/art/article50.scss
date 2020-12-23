@@ -1,0 +1,60 @@
+.article50 {
+  color: inherit;
+  @include col50(0 48px 0 0, row);
+  overflow: hidden;
+  
+  @include respond(mobile) {
+    @include col100(0 0 32px 0, column);
+  }
+  
+  &__img {
+    @include col50(0, row, center);
+    flex: 1 1 auto;
+    overflow: hidden;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    @include respond(mobile) {
+      @include col100(0, row, center);
+      flex: 1;
+      
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
+  &__content {
+    @include col50(0 0 0 24px, column);
+    
+    @include respond(mobile) {
+      @include col100(4px 0 0 0, column);
+    }
+    
+    h3 {
+      color: $coldBlue;
+      margin-bottom: 8px;
+      line-height: 1.7;
+      
+      @include respond(mobile) {
+        margin-bottom: 4px;
+      }
+    }
+    
+    p {
+      font-size: $fontSizeL;
+      color: $white;
+      margin-bottom: 0;
+      
+      @include respond(mobile) {
+        font-size: $fontSizeM;
+      }
+    }
+  }
+}
