@@ -10,6 +10,20 @@
       color: $black;
     }
   }
+
+  img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .figcaption {
+    margin: -24px 0 32px 0;
+    font-size: $fontSizeS;
+
+    @include respond(mobile) {
+      margin: -24px 0 24px 0;
+    }
+  }
   
   &__header {
     @include col100(96px 72px, column);
