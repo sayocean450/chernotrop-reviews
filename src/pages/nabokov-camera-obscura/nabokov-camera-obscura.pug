@@ -1,0 +1,27 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-author/atricle-author
+include ../../components/article-year/article-year
+include ../../components/figure/figure
+
+- var title = 'Вневременный Набоков'
+- var desc = '​​Сдаётся мне, достойная проза вневременна. Яркий тому пример — роман Владимира Набокова «Камера обскура», изданный восемьдесят пять лет назад.'
+- var id = 'nabokov-camera-obscura'
+
+doctype html
+html(prefix="og: http://ogp.me/ns#")
++head(`${id}`,`${title}`, `${desc}`)
+body.body_light
+    +header('dark')
+    article.article
+        div.article__header
+            h1.article__headline=title
+            p.article__description=desc
+        div.article__content
+            div.article__content-row
+                div.article__content-left
+                    include:markdown-it(plugins=['markdown-it-attrs']) ../../../node_modules/soshnikov-writing/publications/blacktrope/nabokov-camera-obscura.md
+                    +articleAuthor('','Артём Сошников', 'http://soshnikov.space/')
+                    +articleYear('Петроград', '2020')
+                div.article__content-right
+                    +figure(`${id}`, 'Первая обложка романа, 1933 год')
