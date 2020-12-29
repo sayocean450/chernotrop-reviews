@@ -6371,9 +6371,9 @@ sockjs@0.3.20:
     websocket-driver "0.6.5"
 
 soshnikov-writing@^1.0.21:
-  version "1.1.46"
-  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.46.tgz#6f6c5f78a43a2ede13c03db785206309aea993aa"
-  integrity sha512-GlP8qZ362Zta3iiF2N2xzZdx6WK7ITA9bTpwdlb+Be3C8MDk1CjxZFowaGIrc7IpiLvlbQ+lBgzo+Rmd4F02Jg==
+  version "1.1.47"
+  resolved "https://registry.yarnpkg.com/soshnikov-writing/-/soshnikov-writing-1.1.47.tgz#e56e1a87fb920f9ef71d960e8adb1239d0f49edf"
+  integrity sha512-crvj+SOhIwrdKSaRdSkuzAhpbC2cURkxMJ0jPcDGzvhimxjGc+L87izvj+0xkYYAlEBvQ0M+CafZMnVnJTZGXQ==
 
 source-list-map@^2.0.0:
   version "2.0.1"
