@@ -1,0 +1,27 @@
+include ../../components/head/head
+include ../../components/header/header
+include ../../components/article-author/atricle-author
+include ../../components/article-year/article-year
+include ../../components/figure/figure
+
+- let title = 'Поддаться, чтобы победить'
+- let desc = 'Артём Сошников рассказывает о трёх романах Булата Ханова, в которых казанский писатель ловко обходит избитые темы и освежает закисшие типажи. Правда, мутную актуальность побороть пока не удалось'
+- let id = 'khanov'
+
+doctype html
+html(prefix="og: http://ogp.me/ns#")
++head(`${id}`,`${title}`, `${desc}`)
+body.body_light
+    +header('dark')
+    article.article
+        div.article__header
+            h1.article__headline=title
+            p.article__description=desc
+        div.article__content
+            div.article__content-row
+                div.article__content-left
+                    include:markdown-it(plugins=['markdown-it-attrs']) ../../../../../Dropbox/soshnikov-writing/publications/blacktrope/khanov.md
+                    +articleAuthor('В ожидании будущих романов, ','Артём Сошников', 'http://soshnikov-writing.art/')
+                    +articleYear('Петроград', '2020')
+                div.article__content-right
+                    +figure(`${id}`, 'Булат Ханов. Фотография из интервью журналу «Собака»')

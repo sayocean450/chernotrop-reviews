@@ -190,3 +190,19 @@
     }
   }
 }
+
+.secondary-info {
+  font-size: $fontSizeL;
+  margin: 0 0 32px 0;
+  padding: 0 32px 0 16px;
+  border-left: 4px solid $coldBlue;
+
+  @include respond(mobile) {
+    margin: 8px 0 32px 0;
+    font-size: $fontSizeM;
+  }
+
+  p {
+    margin: 8px 0 8px 0;
+  }
+}
